@@ -6,6 +6,10 @@
     <title>Mi Sitio Web - <?php echo $this->renderSection('titulo') ?></title>
     <!-- Incluir CSS, por ejemplo con un helper de assets si se configura -->
     <link rel="stylesheet" href="<?= base_url('css/main.css'); ?>">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
 </head>
 <body>
 <!-- Mensaje de Éxito -->
@@ -28,7 +32,7 @@
         <?= $this->include('template/sidebar') ?>
     </aside>
 
-    <main>
+    <main class="container">
         <!-- Esta es la sección donde se inyectará el contenido específico -->
         <?php echo $this->renderSection('contenido') ?>
     </main>

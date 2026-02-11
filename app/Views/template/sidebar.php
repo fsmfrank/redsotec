@@ -3,7 +3,7 @@
         <ul>
             <li class="logo">
                 <a href="/" target="_blank">
-                    <img src="<?php echo base_url('imagenes/logo-redsoven.png'); ?>" alt="Mi Imagen" width="250" height="70">>
+                    <img src="<?php echo base_url('imagenes/logo-redsoven.png'); ?>" alt="Mi Imagen" width="250" height="70">
                 </a>
             </li>
             <li class="menu-toggle">

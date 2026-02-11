@@ -1,3 +1,10 @@
+<?= $this->extend('template/main') ?>
+
+<?= $this->section('titulo') ?>
+    Página de Inicio
+<?= $this->endSection() ?>
+
+<?= $this->section('contenido') ?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -70,3 +77,4 @@
 
 </body>
 </html>
+<?= $this->endSection() ?>

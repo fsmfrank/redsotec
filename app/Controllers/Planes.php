@@ -55,14 +55,19 @@ class Planes extends BaseController
     public function actualizar($id)
     {
         $model = new PlanModel();
+        // Reglas de validación
+        $reglas = [
+            'nombre_plan'      => 'required|min_length[3]|max_length[50]',
+            'precio'           => 'required|decimal'
+        ];
 
-        // Usamos las mismas reglas de validación que en guardar
-        if (!$this->validate($model->getValidationRules())) {
+        if (!$this->validate($reglas)) {
+            // Regresa al formulario con los errores y los datos escritos
             return redirect()->back()->withInput()->with('errors', $this->validator->getErrors());
         }
 
         $model->update($id, $this->request->getPost());
-        return redirect()->to('/planes')->with('msg', 'Plan actualizado con éxito');
+        return redirect()->to('planes')->with('msg', 'Plan actualizado con éxito');
     }
 
     public function eliminar($id)

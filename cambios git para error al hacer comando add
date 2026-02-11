@@ -24,6 +24,8 @@ COMANDOS GIT
 git init
 git status
 git add .
+git config --global user.email "fsantiago0418@gmail.com"
+git config --global user.name "franklin"
 git commit -m "base de datos y modelo planes"
 git remote add origin https://github.com/fsmfrank/redsotec.git
 git push -u origin main
