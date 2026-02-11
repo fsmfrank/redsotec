@@ -1,26 +1,10 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Lista de Planes</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net">
-</head>
-<body class="container mt-5">
-<!-- Mensaje de Éxito -->
-<?php if (session()->getFlashdata('msg')): ?>
-    <div class="alert alert-success alert-dismissible fade show" role="alert">
-        <?= session()->getFlashdata('msg') ?>
-        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-    </div>
-<?php endif; ?>
+<?= $this->extend('template/main') ?>
 
-<!-- Mensaje de Error (por si algo falla) -->
-<?php if (session()->getFlashdata('error')): ?>
-    <div class="alert alert-danger alert-dismissible fade show" role="alert">
-        <?= session()->getFlashdata('error') ?>
-        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-    </div>
-<?php endif; ?>
+<?= $this->section('titulo') ?>
+    Página de Inicio
+<?= $this->endSection() ?>
 
+<?= $this->section('contenido') ?>
 
     <h2>Planes de Internet</h2>
     <a href="<?= base_url('planes/crear') ?>" class="btn btn-primary mb-3">Nuevo Plan</a>
@@ -51,15 +35,6 @@
             <?php endforeach; ?>
         </tbody>
     </table>
-<script>
-    setTimeout(function() {
-        let alert = document.querySelector('.alert');
-        if (alert) {
-            let bsAlert = new bootstrap.Alert(alert);
-            bsAlert.close();
-        }
-    }, 3000);
-</script>
-
 </body>
 </html>
+<?= $this->endSection() ?>
