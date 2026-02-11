@@ -19,3 +19,11 @@ If you now want git to also normalize the files in your working directory, run t
 
 git ls-files -z | xargs -0 rm
 git restore .
+
+COMANDOS GIT
+git init
+git status
+git add .
+git commit -m "base de datos y modelo planes"
+git remote add origin https://github.com/fsmfrank/redsotec.git
+git push -u origin main
