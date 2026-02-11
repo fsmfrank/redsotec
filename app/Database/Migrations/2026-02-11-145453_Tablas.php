@@ -1,0 +1,65 @@
+<?php
+
+namespace App\Database\Migrations;
+
+use CodeIgniter\Database\Migration;
+
+class Tablas extends Migration
+{
+    public function up()
+    {
+        //TABLA PLANES
+        $this->forge->addField([
+            'id' => ['type' => 'INT', 'constraint' => 11, 'auto_increment' => true],
+            'nombre_plan' => ['type' => 'VARCHAR', 'constraint' => 50],
+            'descripcion_plan' => ['type' => 'VARCHAR', 'constraint' => 250],
+            'velocidad_subida' => ['type' => 'VARCHAR', 'constraint' => 10], // e.g. 5M
+            'velocidad_bajada' => ['type' => 'VARCHAR', 'constraint' => 10], // e.g. 10M
+            'precio' => ['type' => 'DECIMAL', 'constraint' => '10,2'],
+        ]);
+        $this->forge->addKey('id', true);
+        $this->forge->createTable('planes');
+        //TABLA PRODUCTOS
+        $this->forge->addField([
+            'id' => ['type' => 'INT', 'constraint' => 11, 'auto_increment' => true],
+            'marca_producto' => ['type' => 'VARCHAR', 'constraint' => 50],
+            'modelo_producto' => ['type' => 'VARCHAR', 'constraint' => 10],
+            'ip_producto' => ['type' => 'VARCHAR', 'constraint' => 30],
+            'mac_producto' => ['type' => 'VARCHAR', 'constraint' => 30],
+            'foto_producto' => ['type' => 'VARCHAR', 'constraint' => 100],
+            'es_inventario' => ['type' => 'VARCHAR', 'constraint' => 2],
+            'precio' => ['type' => 'DECIMAL', 'constraint' => '10,2'],
+        ]);
+        $this->forge->addKey('id', true);
+        $this->forge->createTable('productos');
+        //ABLA USUARIOS
+        $this->forge->addField([
+            'id' => ['type' => 'INT', 'constraint' => 11, 'auto_increment' => true],
+            'nombres' => ['type' => 'VARCHAR', 'constraint' => 100],
+            'apellidos' => ['type' => 'VARCHAR', 'constraint' => 100],
+            'tipo_cedula' => ['type' => 'VARCHAR', 'constraint' => 2],
+            'cedula' => ['type' => 'INT', 'constraint' => 20],
+            'correo' => ['type' => 'VARCHAR', 'constraint' => 100],
+            'telefono1' => ['type' => 'INT'],
+            'telefono2' => ['type' => 'INT'],
+            'fecha_nacimiento' => ['type' => 'DATE', 'null' => true],
+            'direccion' => ['type' => 'VARCHAR', 'constraint' => 200],
+            'plan_id' => ['type' => 'INT'],
+            'producto_id' => ['type' => 'INT'],
+            'dia_instalacion' => ['type' => 'DATE', 'null' => true],
+            'fecha_vencimiento' => ['type' => 'DATE', 'null' => true],
+            'dia_pago'          => ['type' => 'INT', 'constraint' => 2, 'default' => 5],
+            'estado' => ['type' => 'ENUM', 'constraint' => ['activo', 'suspendido'], 'default' => 'activo'],
+            'fecha_acceso' => ['type' => 'DATE', 'null' => true],
+        ]);
+        $this->forge->addKey('id', true);
+        $this->forge->addForeignKey('plan_id', 'planes', 'id', 'CASCADE', 'CASCADE');
+        $this->forge->addForeignKey('producto_id', 'productos', 'id', 'CASCADE', 'CASCADE');
+        $this->forge->createTable('usuarios');
+    }
+
+    public function down()
+    {
+        //
+    }
+}
