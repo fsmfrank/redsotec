@@ -29,3 +29,6 @@ git config --global user.name "franklin"
 git commit -m "base de datos y modelo planes"
 git remote add origin https://github.com/fsmfrank/redsotec.git
 git push -u origin main
+
+ACTUALIZAR DESDE LA PC Y DESCARGAR DESDE GITHUB
+git pull origin main

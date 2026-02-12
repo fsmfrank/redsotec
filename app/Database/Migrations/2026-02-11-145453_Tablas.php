@@ -23,7 +23,7 @@ class Tablas extends Migration
         $this->forge->addField([
             'id' => ['type' => 'INT', 'constraint' => 11, 'auto_increment' => true],
             'marca_producto' => ['type' => 'VARCHAR', 'constraint' => 50],
-            'modelo_producto' => ['type' => 'VARCHAR', 'constraint' => 10],
+            'modelo_producto' => ['type' => 'VARCHAR', 'constraint' => 50],
             'ip_producto' => ['type' => 'VARCHAR', 'constraint' => 30],
             'mac_producto' => ['type' => 'VARCHAR', 'constraint' => 30],
             'foto_producto' => ['type' => 'VARCHAR', 'constraint' => 100],
