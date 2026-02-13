@@ -59,12 +59,18 @@
                         <div class="row">
                             <div class="col-md-6 mb-3">
                                 <label>Foto Producto</label>
-                                <input type="text" name="foto_producto" class="form-control" value="<?= old('foto_producto') ?>" placeholder="Ingrese aqui ...">
+                                <input type="file" class="custom-file-input" id="foto_producto" name="foto_producto" accept="image/*">
+                                <label class="custom-file-label" for="customFile">Seleccionar...</label>
                             </div>
-                            <div class="col-md-6 mb-3">
-                                <label>Es Inventario</label>
-                                <input type="text" name="es_inventario" class="form-control" value="<?= old('es_inventario') ?>" placeholder="Ingrese aqui ...">
+
+                            <div class="form-group col-md-6 mb-3">
+                              <label for="es_inventario">Es Inventario:</label>
+                              <select class="form-control" id="es_inventario" name="es_inventario">
+                                <option>SI</option>
+                                <option>NO</option>
+                              </select>
                             </div>
+
                         </div>
                         <div class="mb-3">
                             <label>Precio</label>

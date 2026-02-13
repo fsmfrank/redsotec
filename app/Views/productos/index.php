@@ -8,8 +8,8 @@
 
     <h2>Listado de Productos</h2>
     <a href="<?= base_url('productos/crear') ?>" class="btn btn-primary mb-3">Nuevo Producto</a>
-
-    <table class="table table-bordered">
+    <input class="form-control mb-3" id="miInput" type="text" placeholder="Buscar..">
+    <table class="table table-bordered table-striped">
         <thead>
             <tr>
                 <th>Marca</th>
@@ -22,7 +22,7 @@
                 <th>Opciones</th>
             </tr>
         </thead>
-        <tbody>
+        <tbody id="miTabla">
             <?php foreach($productos as $producto): ?>
             <tr>
                 <td><?= esc($producto['marca_producto']) ?></td>
@@ -43,6 +43,16 @@
             <?php endforeach; ?>
         </tbody>
     </table>
+<script>
+$(document).ready(function(){
+  $("#myInput").on("keyup", function() {
+    var value = $(this).val().toLowerCase();
+    $("#myTable tr").filter(function() {
+      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    });
+  });
+});
+</script>
 </body>
 </html>
 <?= $this->endSection() ?>
