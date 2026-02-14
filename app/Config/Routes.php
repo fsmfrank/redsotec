@@ -2,6 +2,7 @@
 
 use CodeIgniter\Router\RouteCollection;
 
+use App\Controllers\Pagos;
 /**
  * @var RouteCollection $routes
  */
@@ -30,3 +31,15 @@ $routes->get('clientes/eliminar/(:num)', 'Usuarios::eliminar/$1');
 
 // Ruta para generar el PDF del contrato de un usuario específico
 $routes->get('clientes/generar/(:num)', 'Usuarios::generarContrato/$1');
+
+// Grupo de rutas para Pagos
+$routes->group('pagos', function($routes) {
+    $routes->get('/', [Pagos::class, 'index']);          // Listado: domain.com/pagos
+    $routes->get('crear', [Pagos::class, 'crear']);      // Formulario: domain.com/pagos/crear
+    $routes->post('guardar', [Pagos::class, 'guardar']); // Procesar: domain.com/pagos/guardar
+    $routes->get('pdf/(:num)', [Pagos::class, 'generarPDF/$1']); // Recibo: domain.com/pagos/pdf/5
+});
+// Ruta para ver reportes de morosos (Alertas)
+$routes->get('alertas', 'Pagos::verAlertas');
+//DASHBOARD
+$routes->get('dashboard', 'Pagos::dashboard');

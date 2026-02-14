@@ -32,7 +32,7 @@ class Tablas extends Migration
         ]);
         $this->forge->addKey('id', true);
         $this->forge->createTable('productos');
-        //ABLA USUARIOS
+        //TABLA USUARIOS
         $this->forge->addField([
             'id' => ['type' => 'INT', 'constraint' => 11, 'auto_increment' => true],
             'nombres' => ['type' => 'VARCHAR', 'constraint' => 100],
@@ -55,6 +55,21 @@ class Tablas extends Migration
         $this->forge->addForeignKey('plan_id', 'planes', 'id', 'CASCADE', 'CASCADE');
         $this->forge->addForeignKey('producto_id', 'productos', 'id', 'CASCADE', 'CASCADE');
         $this->forge->createTable('usuarios');
+
+        //TABLA PAGOS
+        $this->forge->addField([
+            'id' => ['type' => 'INT', 'constraint' => 11, 'auto_increment' => true],
+            'usuario_id' => ['type' => 'INT'],
+            'monto' => ['type' => 'DECIMAL', 'constraint' => '10,2'],
+            'mes_pagado' => ['type' => 'DATE', 'null' => true],
+            'anio_pagado' => ['type' => 'VARCHAR', 'constraint' => 30],
+            'fecha_pago' => ['type' => 'DATE', 'null' => true],
+            'metodo_pago' => ['type' => 'ENUM', 'constraint' => ['efectivo', 'pago_movil','transferencia', 'otro'], 'default' => 'efectivo'],
+
+        ]);
+        $this->forge->addKey('id', true);
+        $this->forge->addForeignKey('usuario_id', 'usuarios', 'id', 'CASCADE', 'CASCADE');
+        $this->forge->createTable('pagos');        
     }
 
     public function down()

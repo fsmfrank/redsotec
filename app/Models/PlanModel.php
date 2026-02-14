@@ -23,3 +23,5 @@ class PlanModel extends Model
         'precio'           => 'required|decimal'
     ];
 }
+
+?>

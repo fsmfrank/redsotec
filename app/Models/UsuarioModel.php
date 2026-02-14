@@ -46,3 +46,5 @@ class UsuarioModel extends Model
         return $planModel->find($this->attributes['plan_id']);
     }
 }
+
+?>

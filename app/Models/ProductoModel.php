@@ -25,3 +25,5 @@ class ProductoModel extends Model
         'precio'           => 'required|decimal'
     ];
 }
+
+?>

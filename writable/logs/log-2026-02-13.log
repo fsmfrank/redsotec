@@ -1418,3 +1418,551 @@ DEBUG - 2026-02-13 06:01:44 --> Session: Class initialized using 'CodeIgniter\Se
 DEBUG - 2026-02-13 06:01:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 DEBUG - 2026-02-13 06:03:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 DEBUG - 2026-02-13 06:05:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-13 13:56:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-13 13:56:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-13 14:35:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-13 14:35:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-13 14:37:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-13 14:38:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-13 14:38:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-13 17:14:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-02-13 17:14:49 --> Unknown column 'usuarios.nombre' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT `pagos`.*, `usuarios`.`nombre` as `cliente`
+FROM `pagos`
+JOIN `usuarios` ON `usuarios`.`id` = `pagos`.`usuario_id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pagos`.*, `usuarios`.`nombre` as `cliente`
+FROM `pagos`
+JOIN `usuarios` ON `usuarios`.`id` = `pagos`.`usuario_id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pagos`.*, `usuarios`.`nombre` as `cliente`
+FROM `pagos`
+JOIN `usuarios` ON `usuarios`.`id` = `pagos`.`usuario_id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `pagos`.*, `usuarios`.`nombre` as `cliente`
+FROM `pagos`
+JOIN `usuarios` ON `usuarios`.`id` = `pagos`.`usuario_id`', [], false)
+ 5 SYSTEMPATH\Model.php(254): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\PagoModel.php(14): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\Pagos.php(10): App\Models\PagoModel->getPagosConUsuarios()
+ 9 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Pagos->index()
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+11 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\redsotec\\public\\index.php')
+CRITICAL - 2026-02-13 17:14:49 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'usuarios.nombre' in 'field list'
+[Method: GET, Route: pagos]
+in SYSTEMPATH\Database\BaseConnection.php on line 724.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `pagos`.*, `usuarios`.`nombre` as `cliente`
+FROM `pagos`
+JOIN `usuarios` ON `usuarios`.`id` = `pagos`.`usuario_id`', [], false)
+ 2 SYSTEMPATH\Model.php(254): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Models\PagoModel.php(14): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\Pagos.php(10): App\Models\PagoModel->getPagosConUsuarios()
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Pagos->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\redsotec\\public\\index.php')
+CRITICAL - 2026-02-13 17:14:49 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'usuarios.nombre' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pagos`.*, `usuarios`.`nombre` as `cliente`
+FROM `pagos`
+JOIN `usuarios` ON `usuarios`.`id` = `pagos`.`usuario_id`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pagos`.*, `usuarios`.`nombre` as `cliente`
+FROM `pagos`
+JOIN `usuarios` ON `usuarios`.`id` = `pagos`.`usuario_id`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `pagos`.*, `usuarios`.`nombre` as `cliente`
+FROM `pagos`
+JOIN `usuarios` ON `usuarios`.`id` = `pagos`.`usuario_id`', [], false)
+ 4 SYSTEMPATH\Model.php(254): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Models\PagoModel.php(14): CodeIgniter\BaseModel->findAll()
+ 7 APPPATH\Controllers\Pagos.php(10): App\Models\PagoModel->getPagosConUsuarios()
+ 8 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Pagos->index()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\redsotec\\public\\index.php')
+CRITICAL - 2026-02-13 17:14:49 --> [Caused by] mysqli_sql_exception: Unknown column 'usuarios.nombre' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT `pagos`.*, `usuarios`.`nombre` as `cliente`
+FROM `pagos`
+JOIN `usuarios` ON `usuarios`.`id` = `pagos`.`usuario_id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pagos`.*, `usuarios`.`nombre` as `cliente`
+FROM `pagos`
+JOIN `usuarios` ON `usuarios`.`id` = `pagos`.`usuario_id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pagos`.*, `usuarios`.`nombre` as `cliente`
+FROM `pagos`
+JOIN `usuarios` ON `usuarios`.`id` = `pagos`.`usuario_id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `pagos`.*, `usuarios`.`nombre` as `cliente`
+FROM `pagos`
+JOIN `usuarios` ON `usuarios`.`id` = `pagos`.`usuario_id`', [], false)
+ 5 SYSTEMPATH\Model.php(254): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\PagoModel.php(14): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\Pagos.php(10): App\Models\PagoModel->getPagosConUsuarios()
+ 9 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Pagos->index()
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+11 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\redsotec\\public\\index.php')
+ERROR - 2026-02-13 17:14:55 --> Unknown column 'usuarios.nombre' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT `pagos`.*, `usuarios`.`nombre` as `cliente`
+FROM `pagos`
+JOIN `usuarios` ON `usuarios`.`id` = `pagos`.`usuario_id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pagos`.*, `usuarios`.`nombre` as `cliente`
+FROM `pagos`
+JOIN `usuarios` ON `usuarios`.`id` = `pagos`.`usuario_id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pagos`.*, `usuarios`.`nombre` as `cliente`
+FROM `pagos`
+JOIN `usuarios` ON `usuarios`.`id` = `pagos`.`usuario_id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `pagos`.*, `usuarios`.`nombre` as `cliente`
+FROM `pagos`
+JOIN `usuarios` ON `usuarios`.`id` = `pagos`.`usuario_id`', [], false)
+ 5 SYSTEMPATH\Model.php(254): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\PagoModel.php(14): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\Pagos.php(10): App\Models\PagoModel->getPagosConUsuarios()
+ 9 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Pagos->index()
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+11 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\redsotec\\public\\index.php')
+CRITICAL - 2026-02-13 17:14:55 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'usuarios.nombre' in 'field list'
+[Method: GET, Route: pagos]
+in SYSTEMPATH\Database\BaseConnection.php on line 724.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `pagos`.*, `usuarios`.`nombre` as `cliente`
+FROM `pagos`
+JOIN `usuarios` ON `usuarios`.`id` = `pagos`.`usuario_id`', [], false)
+ 2 SYSTEMPATH\Model.php(254): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Models\PagoModel.php(14): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\Pagos.php(10): App\Models\PagoModel->getPagosConUsuarios()
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Pagos->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\redsotec\\public\\index.php')
+CRITICAL - 2026-02-13 17:14:55 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'usuarios.nombre' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pagos`.*, `usuarios`.`nombre` as `cliente`
+FROM `pagos`
+JOIN `usuarios` ON `usuarios`.`id` = `pagos`.`usuario_id`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pagos`.*, `usuarios`.`nombre` as `cliente`
+FROM `pagos`
+JOIN `usuarios` ON `usuarios`.`id` = `pagos`.`usuario_id`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `pagos`.*, `usuarios`.`nombre` as `cliente`
+FROM `pagos`
+JOIN `usuarios` ON `usuarios`.`id` = `pagos`.`usuario_id`', [], false)
+ 4 SYSTEMPATH\Model.php(254): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Models\PagoModel.php(14): CodeIgniter\BaseModel->findAll()
+ 7 APPPATH\Controllers\Pagos.php(10): App\Models\PagoModel->getPagosConUsuarios()
+ 8 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Pagos->index()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\redsotec\\public\\index.php')
+CRITICAL - 2026-02-13 17:14:55 --> [Caused by] mysqli_sql_exception: Unknown column 'usuarios.nombre' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT `pagos`.*, `usuarios`.`nombre` as `cliente`
+FROM `pagos`
+JOIN `usuarios` ON `usuarios`.`id` = `pagos`.`usuario_id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pagos`.*, `usuarios`.`nombre` as `cliente`
+FROM `pagos`
+JOIN `usuarios` ON `usuarios`.`id` = `pagos`.`usuario_id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pagos`.*, `usuarios`.`nombre` as `cliente`
+FROM `pagos`
+JOIN `usuarios` ON `usuarios`.`id` = `pagos`.`usuario_id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `pagos`.*, `usuarios`.`nombre` as `cliente`
+FROM `pagos`
+JOIN `usuarios` ON `usuarios`.`id` = `pagos`.`usuario_id`', [], false)
+ 5 SYSTEMPATH\Model.php(254): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\PagoModel.php(14): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\Pagos.php(10): App\Models\PagoModel->getPagosConUsuarios()
+ 9 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Pagos->index()
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+11 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\redsotec\\public\\index.php')
+CRITICAL - 2026-02-13 17:44:50 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "pagos/crear.php"
+[Method: GET, Route: pagos/crear]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(226): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('pagos/crear.php')
+ 2 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('pagos/crear', [], true)
+ 3 APPPATH\Controllers\Pagos.php(17): view('pagos/crear', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Pagos->crear()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\redsotec\\public\\index.php')
+CRITICAL - 2026-02-13 17:53:23 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "pagos/crear.php"
+[Method: GET, Route: pagos/crear]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(226): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('pagos/crear.php')
+ 2 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('pagos/crear', [], true)
+ 3 APPPATH\Controllers\Pagos.php(21): view('pagos/crear', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Pagos->crear()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\redsotec\\public\\index.php')
+CRITICAL - 2026-02-13 18:02:26 --> ErrorException: Undefined array key "precio_plan"
+[Method: GET, Route: pagos/crear]
+in APPPATH\Views\pagos\crear.php on line 12.
+ 1 APPPATH\Views\pagos\crear.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "precio_plan"', 'C:\\laragon\\www\\redsotec\\app\\Views\\pagos\\crear.php', 12)
+ 2 SYSTEMPATH\View\View.php(238): include('C:\\laragon\\www\\redsotec\\app\\Views\\pagos\\crear.php')
+ 3 SYSTEMPATH\View\View.php(241): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('pagos/crear', [], true)
+ 5 APPPATH\Controllers\Pagos.php(21): view('pagos/crear', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Pagos->crear()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\redsotec\\public\\index.php')
+CRITICAL - 2026-02-13 18:02:47 --> ErrorException: Undefined array key "precio"
+[Method: GET, Route: pagos/crear]
+in APPPATH\Views\pagos\crear.php on line 12.
+ 1 APPPATH\Views\pagos\crear.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "precio"', 'C:\\laragon\\www\\redsotec\\app\\Views\\pagos\\crear.php', 12)
+ 2 SYSTEMPATH\View\View.php(238): include('C:\\laragon\\www\\redsotec\\app\\Views\\pagos\\crear.php')
+ 3 SYSTEMPATH\View\View.php(241): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('pagos/crear', [], true)
+ 5 APPPATH\Controllers\Pagos.php(21): view('pagos/crear', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Pagos->crear()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\redsotec\\public\\index.php')
+CRITICAL - 2026-02-13 18:03:58 --> ErrorException: Undefined array key "precio"
+[Method: GET, Route: pagos/crear]
+in APPPATH\Views\pagos\crear.php on line 12.
+ 1 APPPATH\Views\pagos\crear.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "precio"', 'C:\\laragon\\www\\redsotec\\app\\Views\\pagos\\crear.php', 12)
+ 2 SYSTEMPATH\View\View.php(238): include('C:\\laragon\\www\\redsotec\\app\\Views\\pagos\\crear.php')
+ 3 SYSTEMPATH\View\View.php(241): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('pagos/crear', [], true)
+ 5 APPPATH\Controllers\Pagos.php(21): view('pagos/crear', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Pagos->crear()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\redsotec\\public\\index.php')
+CRITICAL - 2026-02-13 18:09:12 --> ErrorException: Undefined array key "plan.precio"
+[Method: GET, Route: pagos/crear]
+in APPPATH\Views\pagos\crear.php on line 12.
+ 1 APPPATH\Views\pagos\crear.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "plan.precio"', 'C:\\laragon\\www\\redsotec\\app\\Views\\pagos\\crear.php', 12)
+ 2 SYSTEMPATH\View\View.php(238): include('C:\\laragon\\www\\redsotec\\app\\Views\\pagos\\crear.php')
+ 3 SYSTEMPATH\View\View.php(241): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('pagos/crear', [], true)
+ 5 APPPATH\Controllers\Pagos.php(21): view('pagos/crear', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Pagos->crear()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\redsotec\\public\\index.php')
+CRITICAL - 2026-02-13 18:09:24 --> ErrorException: Undefined array key "plan_nombre"
+[Method: GET, Route: pagos/crear]
+in APPPATH\Views\pagos\crear.php on line 13.
+ 1 APPPATH\Views\pagos\crear.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "plan_nombre"', 'C:\\laragon\\www\\redsotec\\app\\Views\\pagos\\crear.php', 13)
+ 2 SYSTEMPATH\View\View.php(238): include('C:\\laragon\\www\\redsotec\\app\\Views\\pagos\\crear.php')
+ 3 SYSTEMPATH\View\View.php(241): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('pagos/crear', [], true)
+ 5 APPPATH\Controllers\Pagos.php(21): view('pagos/crear', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Pagos->crear()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\redsotec\\public\\index.php')
+CRITICAL - 2026-02-13 18:09:48 --> ErrorException: Undefined array key "nombre_plan"
+[Method: GET, Route: pagos/crear]
+in APPPATH\Views\pagos\crear.php on line 13.
+ 1 APPPATH\Views\pagos\crear.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nombre_plan"', 'C:\\laragon\\www\\redsotec\\app\\Views\\pagos\\crear.php', 13)
+ 2 SYSTEMPATH\View\View.php(238): include('C:\\laragon\\www\\redsotec\\app\\Views\\pagos\\crear.php')
+ 3 SYSTEMPATH\View\View.php(241): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('pagos/crear', [], true)
+ 5 APPPATH\Controllers\Pagos.php(21): view('pagos/crear', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Pagos->crear()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\redsotec\\public\\index.php')
+CRITICAL - 2026-02-13 18:10:24 --> Error: Undefined constant "precio"
+[Method: GET, Route: pagos/crear]
+in APPPATH\Views\pagos\crear.php on line 12.
+ 1 SYSTEMPATH\View\View.php(238): include()
+ 2 SYSTEMPATH\View\View.php(241): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('pagos/crear', [], true)
+ 4 APPPATH\Controllers\Pagos.php(21): view('pagos/crear', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Pagos->crear()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\redsotec\\public\\index.php')
+CRITICAL - 2026-02-13 18:10:38 --> ParseError: syntax error, unexpected token "echo"
+[Method: GET, Route: pagos/crear]
+in APPPATH\Views\pagos\crear.php on line 12.
+ 1 SYSTEMPATH\View\View.php(241): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('pagos/crear', [], true)
+ 3 APPPATH\Controllers\Pagos.php(21): view('pagos/crear', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Pagos->crear()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\redsotec\\public\\index.php')
+CRITICAL - 2026-02-13 18:10:50 --> Error: Undefined constant "plan"
+[Method: GET, Route: pagos/crear]
+in APPPATH\Views\pagos\crear.php on line 13.
+ 1 SYSTEMPATH\View\View.php(238): include()
+ 2 SYSTEMPATH\View\View.php(241): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('pagos/crear', [], true)
+ 4 APPPATH\Controllers\Pagos.php(21): view('pagos/crear', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Pagos->crear()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\redsotec\\public\\index.php')
+DEBUG - 2026-02-13 18:11:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-02-13 18:17:56 --> ErrorException: Cannot redeclare App\Controllers\Pagos::crear()
+[Method: GET, Route: pagos]
+in APPPATH\Controllers\Pagos.php on line 111.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2026-02-13 18:18:51 --> ErrorException: Cannot redeclare App\Controllers\Pagos::crear()
+[Method: GET, Route: pagos]
+in APPPATH\Controllers\Pagos.php on line 111.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2026-02-13 18:18:58 --> ErrorException: Cannot redeclare App\Controllers\Pagos::crear()
+[Method: GET, Route: pagos]
+in APPPATH\Controllers\Pagos.php on line 111.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2026-02-13 18:19:05 --> ErrorException: Cannot redeclare App\Controllers\Pagos::crear()
+[Method: GET, Route: pagos/crear]
+in APPPATH\Controllers\Pagos.php on line 111.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2026-02-13 18:19:54 --> ErrorException: Cannot redeclare App\Controllers\Pagos::crear()
+[Method: GET, Route: pagos]
+in APPPATH\Controllers\Pagos.php on line 111.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2026-02-13 18:20:15 --> ErrorException: Cannot redeclare App\Controllers\Pagos::crear()
+[Method: GET, Route: pagos]
+in APPPATH\Controllers\Pagos.php on line 111.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2026-02-13 18:21:12 --> ErrorException: Cannot redeclare App\Controllers\Pagos::crear()
+[Method: GET, Route: pagos]
+in APPPATH\Controllers\Pagos.php on line 111.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2026-02-13 18:21:13 --> ErrorException: Cannot redeclare App\Controllers\Pagos::crear()
+[Method: GET, Route: pagos]
+in APPPATH\Controllers\Pagos.php on line 111.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2026-02-13 18:21:20 --> ErrorException: Cannot redeclare App\Controllers\Pagos::crear()
+[Method: GET, Route: pagos/]
+in APPPATH\Controllers\Pagos.php on line 111.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2026-02-13 18:21:23 --> ErrorException: Cannot redeclare App\Controllers\Pagos::crear()
+[Method: GET, Route: pagos]
+in APPPATH\Controllers\Pagos.php on line 111.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2026-02-13 18:21:24 --> ErrorException: Cannot redeclare App\Controllers\Pagos::crear()
+[Method: GET, Route: pagos]
+in APPPATH\Controllers\Pagos.php on line 111.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2026-02-13 18:29:34 --> ErrorException: Undefined array key "telefono"
+[Method: GET, Route: alertas]
+in APPPATH\Views\pagos\alertas.php on line 22.
+ 1 APPPATH\Views\pagos\alertas.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "telefono"', 'C:\\laragon\\www\\redsotec\\app\\Views\\pagos\\alertas.php', 22)
+ 2 SYSTEMPATH\View\View.php(238): include('C:\\laragon\\www\\redsotec\\app\\Views\\pagos\\alertas.php')
+ 3 SYSTEMPATH\View\View.php(241): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('pagos/alertas', [], true)
+ 5 APPPATH\Controllers\Pagos.php(90): view('pagos/alertas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Pagos->verAlertas()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\redsotec\\public\\index.php')
+DEBUG - 2026-02-13 23:09:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-13 23:10:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-13 23:11:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-13 23:11:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-13 23:12:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-13 23:12:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-13 23:13:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-13 23:14:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-02-13 23:21:58 --> ErrorException: Cannot redeclare App\Controllers\Pagos::crear()
+[Method: GET, Route: pagos/crear]
+in APPPATH\Controllers\Pagos.php on line 111.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+DEBUG - 2026-02-13 23:23:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-02-13 23:24:06 --> ErrorException: Undefined variable $p
+[Method: GET, Route: pagos/crear]
+in APPPATH\Views\pagos\crear.php on line 19.
+ 1 APPPATH\Views\pagos\crear.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $p', 'C:\\laragon\\www\\redsotec\\app\\Views\\pagos\\crear.php', 19)
+ 2 SYSTEMPATH\View\View.php(238): include('C:\\laragon\\www\\redsotec\\app\\Views\\pagos\\crear.php')
+ 3 SYSTEMPATH\View\View.php(241): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('pagos/crear', [], true)
+ 5 APPPATH\Controllers\Pagos.php(116): view('pagos/crear', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Pagos->crear()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\redsotec\\public\\index.php')
+DEBUG - 2026-02-13 23:24:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-02-13 23:24:33 --> ErrorException: Undefined array key "nombre_plan"
+[Method: GET, Route: pagos/crear]
+in APPPATH\Views\pagos\crear.php on line 19.
+ 1 APPPATH\Views\pagos\crear.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nombre_plan"', 'C:\\laragon\\www\\redsotec\\app\\Views\\pagos\\crear.php', 19)
+ 2 SYSTEMPATH\View\View.php(238): include('C:\\laragon\\www\\redsotec\\app\\Views\\pagos\\crear.php')
+ 3 SYSTEMPATH\View\View.php(241): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('pagos/crear', [], true)
+ 5 APPPATH\Controllers\Pagos.php(116): view('pagos/crear', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Pagos->crear()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\redsotec\\public\\index.php')
+DEBUG - 2026-02-13 23:24:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-13 23:25:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-02-13 23:25:54 --> ErrorException: Undefined array key "precio"
+[Method: GET, Route: pagos/crear]
+in APPPATH\Views\pagos\crear.php on line 27.
+ 1 APPPATH\Views\pagos\crear.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "precio"', 'C:\\laragon\\www\\redsotec\\app\\Views\\pagos\\crear.php', 27)
+ 2 SYSTEMPATH\View\View.php(238): include('C:\\laragon\\www\\redsotec\\app\\Views\\pagos\\crear.php')
+ 3 SYSTEMPATH\View\View.php(241): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('pagos/crear', [], true)
+ 5 APPPATH\Controllers\Pagos.php(116): view('pagos/crear', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Pagos->crear()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\redsotec\\public\\index.php')
+DEBUG - 2026-02-13 23:26:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-13 23:26:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-13 23:27:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-13 23:27:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-13 23:27:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-13 23:30:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-02-13 23:30:09 --> ErrorException: Undefined array key "nombres apellidos"
+[Method: GET, Route: pagos/pdf/2]
+in APPPATH\Views\pagos\recibo_pdf.php on line 21.
+ 1 APPPATH\Views\pagos\recibo_pdf.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nombres apellidos"', 'C:\\laragon\\www\\redsotec\\app\\Views\\pagos\\recibo_pdf.php', 21)
+ 2 SYSTEMPATH\View\View.php(238): include('C:\\laragon\\www\\redsotec\\app\\Views\\pagos\\recibo_pdf.php')
+ 3 SYSTEMPATH\View\View.php(241): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('pagos/recibo_pdf', [], true)
+ 5 APPPATH\Controllers\Pagos.php(56): view('pagos/recibo_pdf', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Pagos->generarPDF('2', '2')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\redsotec\\public\\index.php')
+CRITICAL - 2026-02-13 23:30:49 --> ErrorException: Undefined array key "apellidos"
+[Method: GET, Route: pagos/pdf/2]
+in APPPATH\Views\pagos\recibo_pdf.php on line 21.
+ 1 APPPATH\Views\pagos\recibo_pdf.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "apellidos"', 'C:\\laragon\\www\\redsotec\\app\\Views\\pagos\\recibo_pdf.php', 21)
+ 2 SYSTEMPATH\View\View.php(238): include('C:\\laragon\\www\\redsotec\\app\\Views\\pagos\\recibo_pdf.php')
+ 3 SYSTEMPATH\View\View.php(241): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('pagos/recibo_pdf', [], true)
+ 5 APPPATH\Controllers\Pagos.php(56): view('pagos/recibo_pdf', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Pagos->generarPDF('2', '2')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\redsotec\\public\\index.php')
+DEBUG - 2026-02-13 23:30:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-02-13 23:30:58 --> ErrorException: Undefined array key "apellidos"
+[Method: GET, Route: pagos/pdf/2]
+in APPPATH\Views\pagos\recibo_pdf.php on line 21.
+ 1 APPPATH\Views\pagos\recibo_pdf.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "apellidos"', 'C:\\laragon\\www\\redsotec\\app\\Views\\pagos\\recibo_pdf.php', 21)
+ 2 SYSTEMPATH\View\View.php(238): include('C:\\laragon\\www\\redsotec\\app\\Views\\pagos\\recibo_pdf.php')
+ 3 SYSTEMPATH\View\View.php(241): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('pagos/recibo_pdf', [], true)
+ 5 APPPATH\Controllers\Pagos.php(56): view('pagos/recibo_pdf', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Pagos->generarPDF('2', '2')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\redsotec\\public\\index.php')
+CRITICAL - 2026-02-13 23:31:46 --> ErrorException: Undefined array key "apellidos"
+[Method: GET, Route: pagos/pdf/2]
+in APPPATH\Views\pagos\recibo_pdf.php on line 21.
+ 1 APPPATH\Views\pagos\recibo_pdf.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "apellidos"', 'C:\\laragon\\www\\redsotec\\app\\Views\\pagos\\recibo_pdf.php', 21)
+ 2 SYSTEMPATH\View\View.php(238): include('C:\\laragon\\www\\redsotec\\app\\Views\\pagos\\recibo_pdf.php')
+ 3 SYSTEMPATH\View\View.php(241): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('pagos/recibo_pdf', [], true)
+ 5 APPPATH\Controllers\Pagos.php(56): view('pagos/recibo_pdf', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Pagos->generarPDF('2', '2')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\redsotec\\public\\index.php')
+DEBUG - 2026-02-13 23:31:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-02-13 23:31:50 --> ErrorException: Undefined array key "apellidos"
+[Method: GET, Route: pagos/pdf/2]
+in APPPATH\Views\pagos\recibo_pdf.php on line 21.
+ 1 APPPATH\Views\pagos\recibo_pdf.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "apellidos"', 'C:\\laragon\\www\\redsotec\\app\\Views\\pagos\\recibo_pdf.php', 21)
+ 2 SYSTEMPATH\View\View.php(238): include('C:\\laragon\\www\\redsotec\\app\\Views\\pagos\\recibo_pdf.php')
+ 3 SYSTEMPATH\View\View.php(241): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('pagos/recibo_pdf', [], true)
+ 5 APPPATH\Controllers\Pagos.php(56): view('pagos/recibo_pdf', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Pagos->generarPDF('2', '2')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\redsotec\\public\\index.php')
+DEBUG - 2026-02-13 23:34:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
