@@ -11,17 +11,18 @@
 <body>
     <div class="header">
         <h3>Recibo de Pago</h3>
-        <p>Servicio de Internet Residencial</p>
+        <p>Red de Soluciones Tecnol&oacute;gicas</p>
     </div>
 
     <p><strong>Número de Recibo:</strong> #<?= $pago['id'] ?></p>
     <p><strong>Fecha:</strong> <?= $pago['fecha_pago'] ?></p>
     <hr>
-    
+
     <p><strong>Cliente:</strong> <?= $pago['nombres']." ".$pago['apellidos'] ?></p>
-    <p><strong>Plan Contratado:</strong> <?= $pago['plan_nombre'] ?></p>
+    <p><strong>C&eacute;dula:</strong> <?= $pago['tipo_cedula']." ".$pago['cedula'] ?></p>
+    <p><strong>Servicio:</strong> <?= $pago['plan_nombre'] ?></p>
     <p><strong>Mes Pagado:</strong> <?= $pago['mes_pagado'] ?> / <?= $pago['anio_pagado'] ?></p>
-    
+    <p><strong>Nota:</strong> <?= $pago['nota'] ?></p>
     <div style="background: #f4f4f4; padding: 15px; margin-top: 20px;">
         <span class="total">Monto Pagado: $<?= number_format($pago['monto'], 2) ?></span>
     </div>

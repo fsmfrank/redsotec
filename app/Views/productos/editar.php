@@ -29,7 +29,7 @@
             <input type="text" name="foto_producto" class="form-control" value="<?= old('foto_producto', $producto['foto_producto']) ?>">
         </div>
         <div class="mb-3">
-            <label>MAC del Producto</label>
+            <label>Es Inventario</label>
             <input type="text" name="es_inventario" class="form-control" value="<?= old('es_inventario', $producto['es_inventario']) ?>">
         </div>
         <!-- Repite lo mismo para los demás campos usando old('campo', $plan['campo']) -->

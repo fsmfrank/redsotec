@@ -1,0 +1,700 @@
+DEBUG - 2026-02-19 00:56:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-19 00:56:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-19 00:56:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-19 01:01:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-19 01:07:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-19 01:14:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-19 01:17:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-19 01:20:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-19 01:21:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-19 01:27:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-02-19 01:27:16 --> ErrorException: file_get_contents(/opt/lampp/htdocs/Proyectos/redsotec/public/public/imagenes/logo-redsoven.png): Failed to open stream: No such file or directory
+[Method: GET, Route: clientes/generar/1]
+in APPPATH/Controllers/Usuarios.php on line 123.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(/opt/lampp/htdocs/Proyectos/redsotec/public/public/imagenes/logo-redsoven.png): Failed to open stream: No such file or directory', '/opt/lampp/htdocs/Proyectos/redsotec/app/Controllers/Usuarios.php', 123)
+ 2 APPPATH/Controllers/Usuarios.php(123): file_get_contents('/opt/lampp/htdocs/Proyectos/redsotec/public/public/imagenes/logo-redsoven.png')
+ 3 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\Usuarios->generarContrato('1')
+ 4 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH/rewrite.php(44): require_once('/opt/lampp/htdocs/Proyectos/redsotec/public/index.php')
+CRITICAL - 2026-02-19 01:27:37 --> TypeError: Cannot access offset of type string on string
+[Method: GET, Route: clientes/generar/1]
+in APPPATH/Controllers/Usuarios.php on line 132.
+ 1 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\Usuarios->generarContrato('1')
+ 2 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH/rewrite.php(44): require_once('/opt/lampp/htdocs/Proyectos/redsotec/public/index.php')
+CRITICAL - 2026-02-19 01:27:39 --> TypeError: Cannot access offset of type string on string
+[Method: GET, Route: clientes/generar/1]
+in APPPATH/Controllers/Usuarios.php on line 132.
+ 1 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\Usuarios->generarContrato('1')
+ 2 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH/rewrite.php(44): require_once('/opt/lampp/htdocs/Proyectos/redsotec/public/index.php')
+DEBUG - 2026-02-19 01:28:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-19 01:28:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-19 01:29:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-19 01:33:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-19 01:35:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-02-19 01:35:32 --> ErrorException: Undefined variable $u
+[Method: GET, Route: clientes/generar/1]
+in APPPATH/Views/contrato_view.php on line 21.
+ 1 APPPATH/Views/contrato_view.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $u', '/opt/lampp/htdocs/Proyectos/redsotec/app/Views/contrato_view.php', 21)
+ 2 SYSTEMPATH/View/View.php(238): include('/opt/lampp/htdocs/Proyectos/redsotec/app/Views/contrato_view.php')
+ 3 SYSTEMPATH/View/View.php(241): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render('contrato_view', [], true)
+ 5 APPPATH/Controllers/Usuarios.php(136): view('contrato_view', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\Usuarios->generarContrato('1')
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/opt/lampp/htdocs/Proyectos/redsotec/public/index.php')
+CRITICAL - 2026-02-19 01:35:55 --> ErrorException: Undefined array key "nombres"
+[Method: GET, Route: clientes/generar/1]
+in APPPATH/Views/contrato_view.php on line 21.
+ 1 APPPATH/Views/contrato_view.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nombres"', '/opt/lampp/htdocs/Proyectos/redsotec/app/Views/contrato_view.php', 21)
+ 2 SYSTEMPATH/View/View.php(238): include('/opt/lampp/htdocs/Proyectos/redsotec/app/Views/contrato_view.php')
+ 3 SYSTEMPATH/View/View.php(241): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render('contrato_view', [], true)
+ 5 APPPATH/Controllers/Usuarios.php(136): view('contrato_view', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\Usuarios->generarContrato('1')
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/opt/lampp/htdocs/Proyectos/redsotec/public/index.php')
+CRITICAL - 2026-02-19 01:35:57 --> ErrorException: Undefined array key "nombres"
+[Method: GET, Route: clientes/generar/1]
+in APPPATH/Views/contrato_view.php on line 21.
+ 1 APPPATH/Views/contrato_view.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nombres"', '/opt/lampp/htdocs/Proyectos/redsotec/app/Views/contrato_view.php', 21)
+ 2 SYSTEMPATH/View/View.php(238): include('/opt/lampp/htdocs/Proyectos/redsotec/app/Views/contrato_view.php')
+ 3 SYSTEMPATH/View/View.php(241): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render('contrato_view', [], true)
+ 5 APPPATH/Controllers/Usuarios.php(136): view('contrato_view', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\Usuarios->generarContrato('1')
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/opt/lampp/htdocs/Proyectos/redsotec/public/index.php')
+CRITICAL - 2026-02-19 01:36:42 --> ErrorException: Undefined array key "nombres"
+[Method: GET, Route: clientes/generar/1]
+in APPPATH/Views/contrato_view.php on line 21.
+ 1 APPPATH/Views/contrato_view.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nombres"', '/opt/lampp/htdocs/Proyectos/redsotec/app/Views/contrato_view.php', 21)
+ 2 SYSTEMPATH/View/View.php(238): include('/opt/lampp/htdocs/Proyectos/redsotec/app/Views/contrato_view.php')
+ 3 SYSTEMPATH/View/View.php(241): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render('contrato_view', [], true)
+ 5 APPPATH/Controllers/Usuarios.php(136): view('contrato_view', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\Usuarios->generarContrato('1')
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/opt/lampp/htdocs/Proyectos/redsotec/public/index.php')
+DEBUG - 2026-02-19 01:36:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-19 01:36:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-02-19 01:36:49 --> ErrorException: Undefined array key "nombres"
+[Method: GET, Route: clientes/generar/1]
+in APPPATH/Views/contrato_view.php on line 21.
+ 1 APPPATH/Views/contrato_view.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nombres"', '/opt/lampp/htdocs/Proyectos/redsotec/app/Views/contrato_view.php', 21)
+ 2 SYSTEMPATH/View/View.php(238): include('/opt/lampp/htdocs/Proyectos/redsotec/app/Views/contrato_view.php')
+ 3 SYSTEMPATH/View/View.php(241): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render('contrato_view', [], true)
+ 5 APPPATH/Controllers/Usuarios.php(136): view('contrato_view', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\Usuarios->generarContrato('1')
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/opt/lampp/htdocs/Proyectos/redsotec/public/index.php')
+CRITICAL - 2026-02-19 01:38:14 --> ErrorException: Undefined variable $u
+[Method: GET, Route: clientes/generar/1]
+in APPPATH/Views/contrato_view.php on line 21.
+ 1 APPPATH/Views/contrato_view.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $u', '/opt/lampp/htdocs/Proyectos/redsotec/app/Views/contrato_view.php', 21)
+ 2 SYSTEMPATH/View/View.php(238): include('/opt/lampp/htdocs/Proyectos/redsotec/app/Views/contrato_view.php')
+ 3 SYSTEMPATH/View/View.php(241): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render('contrato_view', [], true)
+ 5 APPPATH/Controllers/Usuarios.php(136): view('contrato_view', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\Usuarios->generarContrato('1')
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/opt/lampp/htdocs/Proyectos/redsotec/public/index.php')
+CRITICAL - 2026-02-19 01:39:17 --> ErrorException: Undefined variable $u
+[Method: GET, Route: clientes/generar/1]
+in APPPATH/Views/contrato_view.php on line 21.
+ 1 APPPATH/Views/contrato_view.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $u', '/opt/lampp/htdocs/Proyectos/redsotec/app/Views/contrato_view.php', 21)
+ 2 SYSTEMPATH/View/View.php(238): include('/opt/lampp/htdocs/Proyectos/redsotec/app/Views/contrato_view.php')
+ 3 SYSTEMPATH/View/View.php(241): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render('contrato_view', [], true)
+ 5 APPPATH/Controllers/Usuarios.php(136): view('contrato_view', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\Usuarios->generarContrato('1')
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/opt/lampp/htdocs/Proyectos/redsotec/public/index.php')
+CRITICAL - 2026-02-19 01:39:19 --> ErrorException: Undefined variable $u
+[Method: GET, Route: clientes/generar/1]
+in APPPATH/Views/contrato_view.php on line 21.
+ 1 APPPATH/Views/contrato_view.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $u', '/opt/lampp/htdocs/Proyectos/redsotec/app/Views/contrato_view.php', 21)
+ 2 SYSTEMPATH/View/View.php(238): include('/opt/lampp/htdocs/Proyectos/redsotec/app/Views/contrato_view.php')
+ 3 SYSTEMPATH/View/View.php(241): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render('contrato_view', [], true)
+ 5 APPPATH/Controllers/Usuarios.php(136): view('contrato_view', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\Usuarios->generarContrato('1')
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/opt/lampp/htdocs/Proyectos/redsotec/public/index.php')
+DEBUG - 2026-02-19 01:39:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-19 01:39:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-02-19 01:39:23 --> ErrorException: Undefined variable $u
+[Method: GET, Route: clientes/generar/1]
+in APPPATH/Views/contrato_view.php on line 21.
+ 1 APPPATH/Views/contrato_view.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $u', '/opt/lampp/htdocs/Proyectos/redsotec/app/Views/contrato_view.php', 21)
+ 2 SYSTEMPATH/View/View.php(238): include('/opt/lampp/htdocs/Proyectos/redsotec/app/Views/contrato_view.php')
+ 3 SYSTEMPATH/View/View.php(241): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render('contrato_view', [], true)
+ 5 APPPATH/Controllers/Usuarios.php(136): view('contrato_view', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\Usuarios->generarContrato('1')
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/opt/lampp/htdocs/Proyectos/redsotec/public/index.php')
+CRITICAL - 2026-02-19 01:39:57 --> ErrorException: Undefined variable $u
+[Method: GET, Route: clientes/generar/1]
+in APPPATH/Views/contrato_view.php on line 21.
+ 1 APPPATH/Views/contrato_view.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $u', '/opt/lampp/htdocs/Proyectos/redsotec/app/Views/contrato_view.php', 21)
+ 2 SYSTEMPATH/View/View.php(238): include('/opt/lampp/htdocs/Proyectos/redsotec/app/Views/contrato_view.php')
+ 3 SYSTEMPATH/View/View.php(241): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render('contrato_view', [], true)
+ 5 APPPATH/Controllers/Usuarios.php(136): view('contrato_view', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\Usuarios->generarContrato('1')
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/opt/lampp/htdocs/Proyectos/redsotec/public/index.php')
+CRITICAL - 2026-02-19 01:39:57 --> ErrorException: Undefined variable $u
+[Method: GET, Route: clientes/generar/1]
+in APPPATH/Views/contrato_view.php on line 21.
+ 1 APPPATH/Views/contrato_view.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $u', '/opt/lampp/htdocs/Proyectos/redsotec/app/Views/contrato_view.php', 21)
+ 2 SYSTEMPATH/View/View.php(238): include('/opt/lampp/htdocs/Proyectos/redsotec/app/Views/contrato_view.php')
+ 3 SYSTEMPATH/View/View.php(241): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render('contrato_view', [], true)
+ 5 APPPATH/Controllers/Usuarios.php(136): view('contrato_view', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\Usuarios->generarContrato('1')
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/opt/lampp/htdocs/Proyectos/redsotec/public/index.php')
+CRITICAL - 2026-02-19 01:39:59 --> ErrorException: Undefined variable $u
+[Method: GET, Route: clientes/generar/1]
+in APPPATH/Views/contrato_view.php on line 21.
+ 1 APPPATH/Views/contrato_view.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $u', '/opt/lampp/htdocs/Proyectos/redsotec/app/Views/contrato_view.php', 21)
+ 2 SYSTEMPATH/View/View.php(238): include('/opt/lampp/htdocs/Proyectos/redsotec/app/Views/contrato_view.php')
+ 3 SYSTEMPATH/View/View.php(241): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render('contrato_view', [], true)
+ 5 APPPATH/Controllers/Usuarios.php(136): view('contrato_view', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\Usuarios->generarContrato('1')
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/opt/lampp/htdocs/Proyectos/redsotec/public/index.php')
+DEBUG - 2026-02-19 01:40:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-19 01:40:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-02-19 01:40:09 --> ErrorException: Undefined variable $u
+[Method: GET, Route: clientes/generar/1]
+in APPPATH/Views/contrato_view.php on line 21.
+ 1 APPPATH/Views/contrato_view.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $u', '/opt/lampp/htdocs/Proyectos/redsotec/app/Views/contrato_view.php', 21)
+ 2 SYSTEMPATH/View/View.php(238): include('/opt/lampp/htdocs/Proyectos/redsotec/app/Views/contrato_view.php')
+ 3 SYSTEMPATH/View/View.php(241): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render('contrato_view', [], true)
+ 5 APPPATH/Controllers/Usuarios.php(136): view('contrato_view', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\Usuarios->generarContrato('1')
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/opt/lampp/htdocs/Proyectos/redsotec/public/index.php')
+DEBUG - 2026-02-19 01:46:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-19 01:46:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-19 01:46:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-02-19 01:46:45 --> ErrorException: Undefined variable $logo_base64
+[Method: GET, Route: clientes/generar/1]
+in APPPATH/Views/contrato_view.php on line 18.
+ 1 APPPATH/Views/contrato_view.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $logo_base64', '/opt/lampp/htdocs/Proyectos/redsotec/app/Views/contrato_view.php', 18)
+ 2 SYSTEMPATH/View/View.php(238): include('/opt/lampp/htdocs/Proyectos/redsotec/app/Views/contrato_view.php')
+ 3 SYSTEMPATH/View/View.php(241): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render('contrato_view', [...], true)
+ 5 APPPATH/Controllers/Usuarios.php(134): view('contrato_view', [...], [...])
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\Usuarios->generarContrato('1')
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/opt/lampp/htdocs/Proyectos/redsotec/public/index.php')
+DEBUG - 2026-02-19 01:51:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-19 01:51:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-02-19 01:54:57 --> ErrorException: Array to string conversion
+[Method: GET, Route: pagos/pdf/1]
+in APPPATH/Views/pagos/recibo_pdf.php on line 13.
+ 1 APPPATH/Views/pagos/recibo_pdf.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', '/opt/lampp/htdocs/Proyectos/redsotec/app/Views/pagos/recibo_pdf.php', 13)
+ 2 SYSTEMPATH/View/View.php(238): include('/opt/lampp/htdocs/Proyectos/redsotec/app/Views/pagos/recibo_pdf.php')
+ 3 SYSTEMPATH/View/View.php(241): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render('pagos/recibo_pdf', [], true)
+ 5 APPPATH/Controllers/Pagos.php(62): view('pagos/recibo_pdf', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\Pagos->generarPDF('1', '1')
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/opt/lampp/htdocs/Proyectos/redsotec/public/index.php')
+CRITICAL - 2026-02-19 01:55:37 --> ErrorException: Array to string conversion
+[Method: GET, Route: pagos/pdf/1]
+in APPPATH/Views/pagos/recibo_pdf.php on line 13.
+ 1 APPPATH/Views/pagos/recibo_pdf.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', '/opt/lampp/htdocs/Proyectos/redsotec/app/Views/pagos/recibo_pdf.php', 13)
+ 2 SYSTEMPATH/View/View.php(238): include('/opt/lampp/htdocs/Proyectos/redsotec/app/Views/pagos/recibo_pdf.php')
+ 3 SYSTEMPATH/View/View.php(241): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render('pagos/recibo_pdf', [], true)
+ 5 APPPATH/Controllers/Pagos.php(62): view('pagos/recibo_pdf', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\Pagos->generarPDF('1', '1')
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/opt/lampp/htdocs/Proyectos/redsotec/public/index.php')
+CRITICAL - 2026-02-19 01:56:13 --> ErrorException: Undefined variable $logo_base64
+[Method: GET, Route: pagos/pdf/1]
+in APPPATH/Views/pagos/recibo_pdf.php on line 13.
+ 1 APPPATH/Views/pagos/recibo_pdf.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $logo_base64', '/opt/lampp/htdocs/Proyectos/redsotec/app/Views/pagos/recibo_pdf.php', 13)
+ 2 SYSTEMPATH/View/View.php(238): include('/opt/lampp/htdocs/Proyectos/redsotec/app/Views/pagos/recibo_pdf.php')
+ 3 SYSTEMPATH/View/View.php(241): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render('pagos/recibo_pdf', [], true)
+ 5 APPPATH/Controllers/Pagos.php(62): view('pagos/recibo_pdf', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\Pagos->generarPDF('1', '1')
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/opt/lampp/htdocs/Proyectos/redsotec/public/index.php')
+CRITICAL - 2026-02-19 01:58:26 --> ErrorException: Undefined variable $logo_base64
+[Method: GET, Route: pagos/pdf/1]
+in APPPATH/Views/pagos/recibo_pdf.php on line 13.
+ 1 APPPATH/Views/pagos/recibo_pdf.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $logo_base64', '/opt/lampp/htdocs/Proyectos/redsotec/app/Views/pagos/recibo_pdf.php', 13)
+ 2 SYSTEMPATH/View/View.php(238): include('/opt/lampp/htdocs/Proyectos/redsotec/app/Views/pagos/recibo_pdf.php')
+ 3 SYSTEMPATH/View/View.php(241): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render('pagos/recibo_pdf', [...], true)
+ 5 APPPATH/Controllers/Pagos.php(62): view('pagos/recibo_pdf', [...], [...])
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\Pagos->generarPDF('1', '1')
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/opt/lampp/htdocs/Proyectos/redsotec/public/index.php')
+CRITICAL - 2026-02-19 01:58:30 --> ErrorException: Undefined variable $logo_base64
+[Method: GET, Route: pagos/pdf/1]
+in APPPATH/Views/pagos/recibo_pdf.php on line 13.
+ 1 APPPATH/Views/pagos/recibo_pdf.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $logo_base64', '/opt/lampp/htdocs/Proyectos/redsotec/app/Views/pagos/recibo_pdf.php', 13)
+ 2 SYSTEMPATH/View/View.php(238): include('/opt/lampp/htdocs/Proyectos/redsotec/app/Views/pagos/recibo_pdf.php')
+ 3 SYSTEMPATH/View/View.php(241): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render('pagos/recibo_pdf', [...], true)
+ 5 APPPATH/Controllers/Pagos.php(62): view('pagos/recibo_pdf', [...], [...])
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\Pagos->generarPDF('1', '1')
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/opt/lampp/htdocs/Proyectos/redsotec/public/index.php')
+DEBUG - 2026-02-19 01:58:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-02-19 01:58:36 --> ErrorException: Undefined variable $logo_base64
+[Method: GET, Route: pagos/pdf/1]
+in APPPATH/Views/pagos/recibo_pdf.php on line 13.
+ 1 APPPATH/Views/pagos/recibo_pdf.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $logo_base64', '/opt/lampp/htdocs/Proyectos/redsotec/app/Views/pagos/recibo_pdf.php', 13)
+ 2 SYSTEMPATH/View/View.php(238): include('/opt/lampp/htdocs/Proyectos/redsotec/app/Views/pagos/recibo_pdf.php')
+ 3 SYSTEMPATH/View/View.php(241): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render('pagos/recibo_pdf', [...], true)
+ 5 APPPATH/Controllers/Pagos.php(62): view('pagos/recibo_pdf', [...], [...])
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\Pagos->generarPDF('1', '1')
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/opt/lampp/htdocs/Proyectos/redsotec/public/index.php')
+CRITICAL - 2026-02-19 01:59:13 --> ErrorException: Array to string conversion
+[Method: GET, Route: pagos/pdf/1]
+in APPPATH/Views/pagos/recibo_pdf.php on line 13.
+ 1 APPPATH/Views/pagos/recibo_pdf.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', '/opt/lampp/htdocs/Proyectos/redsotec/app/Views/pagos/recibo_pdf.php', 13)
+ 2 SYSTEMPATH/View/View.php(238): include('/opt/lampp/htdocs/Proyectos/redsotec/app/Views/pagos/recibo_pdf.php')
+ 3 SYSTEMPATH/View/View.php(241): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render('pagos/recibo_pdf', [], true)
+ 5 APPPATH/Controllers/Pagos.php(62): view('pagos/recibo_pdf', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\Pagos->generarPDF('1', '1')
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/opt/lampp/htdocs/Proyectos/redsotec/public/index.php')
+CRITICAL - 2026-02-19 01:59:15 --> ErrorException: Array to string conversion
+[Method: GET, Route: pagos/pdf/1]
+in APPPATH/Views/pagos/recibo_pdf.php on line 13.
+ 1 APPPATH/Views/pagos/recibo_pdf.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', '/opt/lampp/htdocs/Proyectos/redsotec/app/Views/pagos/recibo_pdf.php', 13)
+ 2 SYSTEMPATH/View/View.php(238): include('/opt/lampp/htdocs/Proyectos/redsotec/app/Views/pagos/recibo_pdf.php')
+ 3 SYSTEMPATH/View/View.php(241): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render('pagos/recibo_pdf', [], true)
+ 5 APPPATH/Controllers/Pagos.php(62): view('pagos/recibo_pdf', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\Pagos->generarPDF('1', '1')
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/opt/lampp/htdocs/Proyectos/redsotec/public/index.php')
+CRITICAL - 2026-02-19 02:00:23 --> ErrorException: Array to string conversion
+[Method: GET, Route: pagos/pdf/1]
+in APPPATH/Views/pagos/recibo_pdf.php on line 13.
+ 1 APPPATH/Views/pagos/recibo_pdf.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', '/opt/lampp/htdocs/Proyectos/redsotec/app/Views/pagos/recibo_pdf.php', 13)
+ 2 SYSTEMPATH/View/View.php(238): include('/opt/lampp/htdocs/Proyectos/redsotec/app/Views/pagos/recibo_pdf.php')
+ 3 SYSTEMPATH/View/View.php(241): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render('pagos/recibo_pdf', [], true)
+ 5 APPPATH/Controllers/Pagos.php(62): view('pagos/recibo_pdf', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\Pagos->generarPDF('1', '1')
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/opt/lampp/htdocs/Proyectos/redsotec/public/index.php')
+DEBUG - 2026-02-19 02:00:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-02-19 02:00:44 --> ErrorException: Array to string conversion
+[Method: GET, Route: pagos/pdf/1]
+in APPPATH/Views/pagos/recibo_pdf.php on line 13.
+ 1 APPPATH/Views/pagos/recibo_pdf.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', '/opt/lampp/htdocs/Proyectos/redsotec/app/Views/pagos/recibo_pdf.php', 13)
+ 2 SYSTEMPATH/View/View.php(238): include('/opt/lampp/htdocs/Proyectos/redsotec/app/Views/pagos/recibo_pdf.php')
+ 3 SYSTEMPATH/View/View.php(241): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render('pagos/recibo_pdf', [], true)
+ 5 APPPATH/Controllers/Pagos.php(62): view('pagos/recibo_pdf', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\Pagos->generarPDF('1', '1')
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/opt/lampp/htdocs/Proyectos/redsotec/public/index.php')
+CRITICAL - 2026-02-19 02:01:33 --> ErrorException: Array to string conversion
+[Method: GET, Route: pagos/pdf/1]
+in APPPATH/Views/pagos/recibo_pdf.php on line 13.
+ 1 APPPATH/Views/pagos/recibo_pdf.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', '/opt/lampp/htdocs/Proyectos/redsotec/app/Views/pagos/recibo_pdf.php', 13)
+ 2 SYSTEMPATH/View/View.php(238): include('/opt/lampp/htdocs/Proyectos/redsotec/app/Views/pagos/recibo_pdf.php')
+ 3 SYSTEMPATH/View/View.php(241): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render('pagos/recibo_pdf', [], true)
+ 5 APPPATH/Controllers/Pagos.php(62): view('pagos/recibo_pdf', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\Pagos->generarPDF('1', '1')
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/opt/lampp/htdocs/Proyectos/redsotec/public/index.php')
+CRITICAL - 2026-02-19 02:01:44 --> ParseError: syntax error, unexpected token ";", expecting "]"
+[Method: GET, Route: pagos/pdf/1]
+in APPPATH/Controllers/Pagos.php on line 62.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(295): CodeIgniter\Autoloader\Autoloader->includeFile('/opt/lampp/htdocs/Proyectos/redsotec/app/Controllers/Pagos.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(271): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Pagos')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Pagos')
+ 4 SYSTEMPATH/Router/Router.php(792): class_exists('\\App\\Controllers\\Pagos')
+ 5 SYSTEMPATH/Router/Router.php(230): CodeIgniter\Router\Router->processRouteAttributes()
+ 6 SYSTEMPATH/CodeIgniter.php(829): CodeIgniter\Router\Router->handle('pagos/pdf/1')
+ 7 SYSTEMPATH/CodeIgniter.php(441): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/opt/lampp/htdocs/Proyectos/redsotec/public/index.php')
+CRITICAL - 2026-02-19 02:01:50 --> ParseError: syntax error, unexpected single-quoted string "logo_base64", expecting "]"
+[Method: GET, Route: pagos/pdf/1]
+in APPPATH/Controllers/Pagos.php on line 62.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(295): CodeIgniter\Autoloader\Autoloader->includeFile('/opt/lampp/htdocs/Proyectos/redsotec/app/Controllers/Pagos.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(271): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Pagos')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Pagos')
+ 4 SYSTEMPATH/Router/Router.php(792): class_exists('\\App\\Controllers\\Pagos')
+ 5 SYSTEMPATH/Router/Router.php(230): CodeIgniter\Router\Router->processRouteAttributes()
+ 6 SYSTEMPATH/CodeIgniter.php(829): CodeIgniter\Router\Router->handle('pagos/pdf/1')
+ 7 SYSTEMPATH/CodeIgniter.php(441): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/opt/lampp/htdocs/Proyectos/redsotec/public/index.php')
+CRITICAL - 2026-02-19 02:02:08 --> ErrorException: Array to string conversion
+[Method: GET, Route: pagos/pdf/1]
+in APPPATH/Views/pagos/recibo_pdf.php on line 13.
+ 1 APPPATH/Views/pagos/recibo_pdf.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', '/opt/lampp/htdocs/Proyectos/redsotec/app/Views/pagos/recibo_pdf.php', 13)
+ 2 SYSTEMPATH/View/View.php(238): include('/opt/lampp/htdocs/Proyectos/redsotec/app/Views/pagos/recibo_pdf.php')
+ 3 SYSTEMPATH/View/View.php(241): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render('pagos/recibo_pdf', [], true)
+ 5 APPPATH/Controllers/Pagos.php(62): view('pagos/recibo_pdf', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\Pagos->generarPDF('1', '1')
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/opt/lampp/htdocs/Proyectos/redsotec/public/index.php')
+CRITICAL - 2026-02-19 02:04:01 --> ErrorException: Undefined variable $logo_base64
+[Method: GET, Route: pagos/pdf/1]
+in APPPATH/Views/pagos/recibo_pdf.php on line 13.
+ 1 APPPATH/Views/pagos/recibo_pdf.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $logo_base64', '/opt/lampp/htdocs/Proyectos/redsotec/app/Views/pagos/recibo_pdf.php', 13)
+ 2 SYSTEMPATH/View/View.php(238): include('/opt/lampp/htdocs/Proyectos/redsotec/app/Views/pagos/recibo_pdf.php')
+ 3 SYSTEMPATH/View/View.php(241): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render('pagos/recibo_pdf', [], true)
+ 5 APPPATH/Controllers/Pagos.php(62): view('pagos/recibo_pdf', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\Pagos->generarPDF('1', '1')
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/opt/lampp/htdocs/Proyectos/redsotec/public/index.php')
+CRITICAL - 2026-02-19 02:05:55 --> ErrorException: Undefined variable $pago
+[Method: GET, Route: pagos/pdf/1]
+in APPPATH/Views/pagos/recibo_pdf.php on line 13.
+ 1 APPPATH/Views/pagos/recibo_pdf.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pago', '/opt/lampp/htdocs/Proyectos/redsotec/app/Views/pagos/recibo_pdf.php', 13)
+ 2 SYSTEMPATH/View/View.php(238): include('/opt/lampp/htdocs/Proyectos/redsotec/app/Views/pagos/recibo_pdf.php')
+ 3 SYSTEMPATH/View/View.php(241): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render('pagos/recibo_pdf', [], true)
+ 5 APPPATH/Controllers/Pagos.php(62): view('pagos/recibo_pdf', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\Pagos->generarPDF('1', '1')
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/opt/lampp/htdocs/Proyectos/redsotec/public/index.php')
+CRITICAL - 2026-02-19 02:06:48 --> ErrorException: Undefined array key "logo_base64"
+[Method: GET, Route: pagos/pdf/1]
+in APPPATH/Views/pagos/recibo_pdf.php on line 13.
+ 1 APPPATH/Views/pagos/recibo_pdf.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "logo_base64"', '/opt/lampp/htdocs/Proyectos/redsotec/app/Views/pagos/recibo_pdf.php', 13)
+ 2 SYSTEMPATH/View/View.php(238): include('/opt/lampp/htdocs/Proyectos/redsotec/app/Views/pagos/recibo_pdf.php')
+ 3 SYSTEMPATH/View/View.php(241): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render('pagos/recibo_pdf', [], true)
+ 5 APPPATH/Controllers/Pagos.php(62): view('pagos/recibo_pdf', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\Pagos->generarPDF('1', '1')
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/opt/lampp/htdocs/Proyectos/redsotec/public/index.php')
+CRITICAL - 2026-02-19 02:07:34 --> ErrorException: Undefined array key "logo_base64"
+[Method: GET, Route: pagos/pdf/1]
+in APPPATH/Views/pagos/recibo_pdf.php on line 13.
+ 1 APPPATH/Views/pagos/recibo_pdf.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "logo_base64"', '/opt/lampp/htdocs/Proyectos/redsotec/app/Views/pagos/recibo_pdf.php', 13)
+ 2 SYSTEMPATH/View/View.php(238): include('/opt/lampp/htdocs/Proyectos/redsotec/app/Views/pagos/recibo_pdf.php')
+ 3 SYSTEMPATH/View/View.php(241): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render('pagos/recibo_pdf', [], true)
+ 5 APPPATH/Controllers/Pagos.php(62): view('pagos/recibo_pdf', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\Pagos->generarPDF('1', '1')
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/opt/lampp/htdocs/Proyectos/redsotec/public/index.php')
+CRITICAL - 2026-02-19 02:08:08 --> ErrorException: Undefined array key "logo_base64"
+[Method: GET, Route: pagos/pdf/1]
+in APPPATH/Views/pagos/recibo_pdf.php on line 13.
+ 1 APPPATH/Views/pagos/recibo_pdf.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "logo_base64"', '/opt/lampp/htdocs/Proyectos/redsotec/app/Views/pagos/recibo_pdf.php', 13)
+ 2 SYSTEMPATH/View/View.php(238): include('/opt/lampp/htdocs/Proyectos/redsotec/app/Views/pagos/recibo_pdf.php')
+ 3 SYSTEMPATH/View/View.php(241): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render('pagos/recibo_pdf', [], true)
+ 5 APPPATH/Controllers/Pagos.php(62): view('pagos/recibo_pdf', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\Pagos->generarPDF('1', '1')
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/opt/lampp/htdocs/Proyectos/redsotec/public/index.php')
+CRITICAL - 2026-02-19 02:08:43 --> ErrorException: Undefined array key "logo_base64"
+[Method: GET, Route: pagos/pdf/1]
+in APPPATH/Views/pagos/recibo_pdf.php on line 13.
+ 1 APPPATH/Views/pagos/recibo_pdf.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "logo_base64"', '/opt/lampp/htdocs/Proyectos/redsotec/app/Views/pagos/recibo_pdf.php', 13)
+ 2 SYSTEMPATH/View/View.php(238): include('/opt/lampp/htdocs/Proyectos/redsotec/app/Views/pagos/recibo_pdf.php')
+ 3 SYSTEMPATH/View/View.php(241): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render('pagos/recibo_pdf', [], true)
+ 5 APPPATH/Controllers/Pagos.php(62): view('pagos/recibo_pdf', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\Pagos->generarPDF('1', '1')
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/opt/lampp/htdocs/Proyectos/redsotec/public/index.php')
+DEBUG - 2026-02-19 02:08:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-02-19 02:08:47 --> ErrorException: Undefined array key "logo_base64"
+[Method: GET, Route: pagos/pdf/1]
+in APPPATH/Views/pagos/recibo_pdf.php on line 13.
+ 1 APPPATH/Views/pagos/recibo_pdf.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "logo_base64"', '/opt/lampp/htdocs/Proyectos/redsotec/app/Views/pagos/recibo_pdf.php', 13)
+ 2 SYSTEMPATH/View/View.php(238): include('/opt/lampp/htdocs/Proyectos/redsotec/app/Views/pagos/recibo_pdf.php')
+ 3 SYSTEMPATH/View/View.php(241): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render('pagos/recibo_pdf', [], true)
+ 5 APPPATH/Controllers/Pagos.php(62): view('pagos/recibo_pdf', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\Pagos->generarPDF('1', '1')
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/opt/lampp/htdocs/Proyectos/redsotec/public/index.php')
+CRITICAL - 2026-02-19 02:09:35 --> ErrorException: Undefined array key "logo_base64"
+[Method: GET, Route: pagos/pdf/1]
+in APPPATH/Views/pagos/recibo_pdf.php on line 13.
+ 1 APPPATH/Views/pagos/recibo_pdf.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "logo_base64"', '/opt/lampp/htdocs/Proyectos/redsotec/app/Views/pagos/recibo_pdf.php', 13)
+ 2 SYSTEMPATH/View/View.php(238): include('/opt/lampp/htdocs/Proyectos/redsotec/app/Views/pagos/recibo_pdf.php')
+ 3 SYSTEMPATH/View/View.php(241): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render('pagos/recibo_pdf', [], true)
+ 5 APPPATH/Controllers/Pagos.php(62): view('pagos/recibo_pdf', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\Pagos->generarPDF('1', '1')
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/opt/lampp/htdocs/Proyectos/redsotec/public/index.php')
+CRITICAL - 2026-02-19 02:11:53 --> ErrorException: Undefined variable $pago
+[Method: GET, Route: pagos/pdf/1]
+in APPPATH/Views/pagos/recibo_pdf.php on line 13.
+ 1 APPPATH/Views/pagos/recibo_pdf.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pago', '/opt/lampp/htdocs/Proyectos/redsotec/app/Views/pagos/recibo_pdf.php', 13)
+ 2 SYSTEMPATH/View/View.php(238): include('/opt/lampp/htdocs/Proyectos/redsotec/app/Views/pagos/recibo_pdf.php')
+ 3 SYSTEMPATH/View/View.php(241): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render('pagos/recibo_pdf', [], true)
+ 5 APPPATH/Controllers/Pagos.php(62): view('pagos/recibo_pdf', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\Pagos->generarPDF('1', '1')
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/opt/lampp/htdocs/Proyectos/redsotec/public/index.php')
+CRITICAL - 2026-02-19 02:12:10 --> ErrorException: Undefined variable $pago
+[Method: GET, Route: pagos/pdf/1]
+in APPPATH/Views/pagos/recibo_pdf.php on line 13.
+ 1 APPPATH/Views/pagos/recibo_pdf.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pago', '/opt/lampp/htdocs/Proyectos/redsotec/app/Views/pagos/recibo_pdf.php', 13)
+ 2 SYSTEMPATH/View/View.php(238): include('/opt/lampp/htdocs/Proyectos/redsotec/app/Views/pagos/recibo_pdf.php')
+ 3 SYSTEMPATH/View/View.php(241): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render('pagos/recibo_pdf', [], true)
+ 5 APPPATH/Controllers/Pagos.php(62): view('pagos/recibo_pdf', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\Pagos->generarPDF('1', '1')
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/opt/lampp/htdocs/Proyectos/redsotec/public/index.php')
+CRITICAL - 2026-02-19 02:13:08 --> ErrorException: Undefined variable $data
+[Method: GET, Route: pagos/pdf/1]
+in APPPATH/Views/pagos/recibo_pdf.php on line 13.
+ 1 APPPATH/Views/pagos/recibo_pdf.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', '/opt/lampp/htdocs/Proyectos/redsotec/app/Views/pagos/recibo_pdf.php', 13)
+ 2 SYSTEMPATH/View/View.php(238): include('/opt/lampp/htdocs/Proyectos/redsotec/app/Views/pagos/recibo_pdf.php')
+ 3 SYSTEMPATH/View/View.php(241): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render('pagos/recibo_pdf', [...], true)
+ 5 APPPATH/Controllers/Pagos.php(62): view('pagos/recibo_pdf', [...], [...])
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\Pagos->generarPDF('1', '1')
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/opt/lampp/htdocs/Proyectos/redsotec/public/index.php')
+CRITICAL - 2026-02-19 02:13:09 --> ErrorException: Undefined variable $data
+[Method: GET, Route: pagos/pdf/1]
+in APPPATH/Views/pagos/recibo_pdf.php on line 13.
+ 1 APPPATH/Views/pagos/recibo_pdf.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', '/opt/lampp/htdocs/Proyectos/redsotec/app/Views/pagos/recibo_pdf.php', 13)
+ 2 SYSTEMPATH/View/View.php(238): include('/opt/lampp/htdocs/Proyectos/redsotec/app/Views/pagos/recibo_pdf.php')
+ 3 SYSTEMPATH/View/View.php(241): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render('pagos/recibo_pdf', [...], true)
+ 5 APPPATH/Controllers/Pagos.php(62): view('pagos/recibo_pdf', [...], [...])
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\Pagos->generarPDF('1', '1')
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/opt/lampp/htdocs/Proyectos/redsotec/public/index.php')
+CRITICAL - 2026-02-19 02:13:29 --> ErrorException: Undefined variable $data
+[Method: GET, Route: pagos/pdf/1]
+in APPPATH/Views/pagos/recibo_pdf.php on line 13.
+ 1 APPPATH/Views/pagos/recibo_pdf.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', '/opt/lampp/htdocs/Proyectos/redsotec/app/Views/pagos/recibo_pdf.php', 13)
+ 2 SYSTEMPATH/View/View.php(238): include('/opt/lampp/htdocs/Proyectos/redsotec/app/Views/pagos/recibo_pdf.php')
+ 3 SYSTEMPATH/View/View.php(241): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render('pagos/recibo_pdf', [...], true)
+ 5 APPPATH/Controllers/Pagos.php(62): view('pagos/recibo_pdf', [...], [...])
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\Pagos->generarPDF('1', '1')
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/opt/lampp/htdocs/Proyectos/redsotec/public/index.php')
+CRITICAL - 2026-02-19 02:13:30 --> ErrorException: Undefined variable $data
+[Method: GET, Route: pagos/pdf/1]
+in APPPATH/Views/pagos/recibo_pdf.php on line 13.
+ 1 APPPATH/Views/pagos/recibo_pdf.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', '/opt/lampp/htdocs/Proyectos/redsotec/app/Views/pagos/recibo_pdf.php', 13)
+ 2 SYSTEMPATH/View/View.php(238): include('/opt/lampp/htdocs/Proyectos/redsotec/app/Views/pagos/recibo_pdf.php')
+ 3 SYSTEMPATH/View/View.php(241): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render('pagos/recibo_pdf', [...], true)
+ 5 APPPATH/Controllers/Pagos.php(62): view('pagos/recibo_pdf', [...], [...])
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\Pagos->generarPDF('1', '1')
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/opt/lampp/htdocs/Proyectos/redsotec/public/index.php')
+DEBUG - 2026-02-19 02:15:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-19 02:16:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-19 02:16:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-19 02:17:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-19 02:17:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-19 02:17:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-19 02:17:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-19 02:17:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-19 02:17:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

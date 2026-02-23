@@ -34,7 +34,7 @@ class UsuarioModel extends Model
         'cedula'           => 'required|decimal'
     ];
     public function obtenerPlanUsuario($id) {
-        return $this->select('usuarios.*, planes.*, productos.*')
+        return $this->select('usuarios.*, planes.*, productos.marca_producto, productos.mac_producto')
                     ->join('planes', 'planes.id = usuarios.plan_id')
                     ->join('productos', 'productos.id = usuarios.producto_id')
                     ->where('usuarios.id', $id)

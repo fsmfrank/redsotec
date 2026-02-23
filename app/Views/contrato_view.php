@@ -4,17 +4,17 @@
     <meta charset="UTF-8">
     <title>Contrato de Servicio de Internet</title>
     <style>
-        body { font-family: Arial, sans-serif; line-height: 1.5; margin: 40px; color: #333; }
+        body { font-family: Arial, sans-serif; line-height: 1.5; margin: 20px; color: #333; }
         h1, h2 { text-align: center; text-transform: uppercase; }
-        .section { margin-bottom: 20px; }
+        .section { margin-bottom: 10px; }
         .bold { font-weight: bold; }
-        .footer-sign { margin-top: 50px; display: flex; justify-content: space-between; }
+        .footer-sign { margin-top: 30px; display: flex; justify-content: space-between; }
         .signature-box { border-top: 1px solid #000; width: 40%; text-align: center; padding-top: 10px; }
         @media print { .page-break { page-break-before: always; } }
     </style>
 </head>
 <body>
-
+    <img src="<?php echo $logo_base64; ?>" style="width: 150px;">
     <h2>Contrato de Prestaci&oacute;n de Servicios de Internet</h2>
 
     <div class="section">
@@ -39,12 +39,12 @@
 
     <div class="section">
         <h3>3. Tar&iacute;fas y Forma de Pago</h3>
-        <p>EL CLIENTE se compromete a pagar mensualmente la suma de <strong><?= esc($u['precio']) ?></strong>. El pago deber&aacute; realizarse dentro de los primeros <?= esc($u['dia_pago']) ?> d&iacute;as de cada mes. El incumplimiento facultar&aacute; al PROVEEDOR a suspender el servicio tras [10] d&iacute;as de mora.</p>
+        <p>EL CLIENTE se compromete a pagar mensualmente la suma de <strong><?= esc($u['precio']) ?> $. </strong>. El pago deber&aacute; realizarse dentro de los primeros <?= esc($u['dia_pago']) ?> d&iacute;as de cada mes. El incumplimiento facultar&aacute; al PROVEEDOR a suspender el servicio tras [5] d&iacute;as de mora.</p>
     </div>
 
     <div class="section">
         <h3>4. Equipamiento</h3>
-        <p>EL PROVEEDOR entrega en calidad de [Comodato/Alquiler] un Router/M&oacute;dem marca <strong><?= esc($u['marca_producto']) ?></strong> con n&uacute;mero de serie <strong> <?= esc($u['mac_producto']) ?>.</strong> EL CLIENTE es responsable por el cuidado y devoluci&oacute;n del mismo al finalizar el contrato.</p>
+        <p>EL PROVEEDOR entrega en calidad de [Comodato/Alquiler] un M&oacute;dem marca <strong><?= esc($u['marca_producto']) ?></strong> con n&uacute;mero de serie <strong> <?= esc($u['mac_producto']) ?>. Y un Router para acceso a Internet Inal&aacute;mbrico. </strong> EL CLIENTE es responsable por el cuidado y devoluci&oacute;n del mismo al finalizar el contrato.</p>
     </div>
 
 
@@ -68,19 +68,27 @@
         <p>Para cualquier controversia, las partes se someten a la jurisdicci&oacute;n de los tribunales de Los Teques Estado Bolivariano de Miranda.</p>
     </div>
 
-    <p>Le&iacute;do el presente contrato y conformes con su contenido, las partes lo firman por duplicado en la ciudad de Los Teques, a los [Día] dias del mes de [Mes] de 2026.</p>
+    <p>Le&iacute;do el presente contrato y conformes con su contenido, las partes lo firman por duplicado en la ciudad de Los Teques, en la siguiente fecha: <?= esc($u['fecha_ins']) ?>.</p>
+    <br><br>
+    <table  width="500" align="center">
+        <tr>
+            <td>
+            <div class="footer-sign col-md-6 mb-3">
+                <p>_________________________________</p>
+                <p><strong>POR EL PROVEEDOR</strong></p>
+                <p>Firma y Sello</p>
+            </div>
+            </td>
 
-    <div class="footer-sign">
-        <div class="signature-box col-6">
-            <p><strong>POR EL PROVEEDOR</strong></p>
-            <p>Firma y Sello</p>
-        </div><br><br>
-        <div class="signature-box col-6">
-            <p><strong>POR EL CLIENTE</strong></p>
-            <p>Firma y Huella</p>
-        </div>
+            <td>
+            <div class="footer-sign col-md-6 mb-3">
+            <p>_________________________________</p>
+                <p><strong>POR EL CLIENTE</strong></p>
+                <p>Firma y Huella</p>
+            </div>
+            </td>
 
-    </div>
-
+        </tr>
+    </table>
 </body>
 </html>

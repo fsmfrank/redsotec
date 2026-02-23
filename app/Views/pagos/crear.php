@@ -30,7 +30,7 @@
         </div>
 
         <div class="row">
-            <div class="col-md-4 mb-3">
+            <div class="col-md-6 mb-3">
                 <label>Mes Correspondiente:</label>
                 <select name="mes" class="form-control">
                     <?php 
@@ -44,13 +44,21 @@
                 </select>
             </div>
 
-            <div class="col-md-4 mb-3">
+            <div class="col-md-6 mb-3">
                 <label>Método de Pago:</label>
                 <select name="metodo" class="form-control">
+                    <option value="Pago Movil">Pago Movil</option>
                     <option value="Efectivo">Efectivo</option>
-                    <option value="Transferencia">Transferencia</option>
-                    <option value="Tarjeta">Tarjeta / PayPal</option>
+                    <option value="Transferencia">Transferencia / PayPal</option>
+                    <option value="Otro">Tarjeta / Otro</option>
                 </select>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-8 mb-3">
+                <label>Nota:</label>
+                <input type="text" name="nota" id="nota" class="form-control">
             </div>
 
             <div class="col-md-4 mb-3">
@@ -60,6 +68,7 @@
                 </button>
             </div>
         </div>
+
     </form>
 </div>
 

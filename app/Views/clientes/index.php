@@ -12,6 +12,7 @@
     <table class="table table-bordered table-striped">
         <thead>
             <tr>
+                <th>Nro.</th>
                 <th>Nombres</th>
                 <th>Apellidos</th>
                 <th>Cedula</th>
@@ -24,8 +25,9 @@
             </tr>
         </thead>
         <tbody id="miTabla">
-            <?php foreach($clientes as $cliente): ?>
+            <?php $CONT=1; foreach($clientes as $cliente): ?>
             <tr>
+                <td><?= $CONT++ ?></td>
                 <td><?= esc($cliente['nombres']) ?></td>
                 <td><?= esc($cliente['apellidos']) ?></td>
                 <td><?= esc($cliente['cedula']) ?></td>

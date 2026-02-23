@@ -47,11 +47,11 @@
                         <div class="form-group col-md-6 mb-3">
                             <label for="tipo_cedula">Tipo de Cédula:</label>
                             <select class="form-control" id="tipo_cedula" name="tipo_cedula">
-                                <option>V</option>
-                                <option>E</option>
-                                <option>G</option>
-                                <option>C</option>
-                                <option>O</option>                               
+                                <option value="v">V</option>
+                                <option value="e">E</option>
+                                <option value="g">G</option>
+                                <option value="c">C</option>
+                                <option value="o">O</option>
                             </select>
                         </div>
                         <div class="row">
@@ -68,11 +68,11 @@
                         <div class="row">
                             <div class="col-md-6 mb-3">
                                 <label>Teléfono Principal</label>
-                                <input type="text" class="custom-text-input" id="telefono1" name="telefono1" accept="">
+                                <input type="text" class="custom-text-input" id="telefono1" value="<?= old('telefono1') ?>" name="telefono1" accept="">
                             </div>
                             <div class="col-md-6 mb-3">
                                 <label>Teléfono Otro</label>
-                                <input type="text" class="custom-text-input" id="telefono2" name="telefono2" accept="">
+                                <input type="text" class="custom-text-input" id="telefono2" value="<?= old('telefono2') ?>" name="telefono2" accept="">
                             </div>
                         </div>
                         <div class="mb-3">
@@ -84,20 +84,26 @@
                             <textarea name="direccion" class="form-control" rows="2"><?= old('direccion') ?></textarea>
                         </div>
                         <div class="mb-3">
-                            <label>Plan del Cliente</label>
-                                <select class="form-control" id="plan_id" name="plan_id">
-                                    <option value="1">PLAN BASICO</option>
-                                    <option value="2">PLAN MEDIO</option>
-                                    <option value="3">PLAN AVANZADO</option>
-                                </select>
+                            <label>Indique un Plan</label>
+                            <select name="plan_id" id="plan_id" class="form-control">
+                                <option value="">-- Seleccione un plan --</option>
+                                <?php foreach($planes as $u): ?>
+                                    <option value="<?= $u['id'] ?>">
+                                        Plan: <?= $u['plan_nombre'] ?> VALOR <?= $u['precio_plan'] ?> $
+                                    </option>
+                                <?php endforeach; ?>
+                            </select>
                         </div>
                         <div class="mb-3">
                             <label>Equipo del Cliente</label>
-                                <select class="form-control" id="producto_id" name="producto_id">
-                                    <option value="1">ROUTER 1</option>
-                                    <option value="2">ROUTER 2</option>
-                                    <option value="3">ROUTER 3</option>
-                                </select>
+                            <select name="producto_id" id="producto_id" class="form-control">
+                                <option value="">-- Seleccione un equipo --</option>
+                                <?php foreach($productos as $pr): ?>
+                                    <option value="<?= $pr['id'] ?>">
+                                        EQUIPO: <?= $pr['marca_producto'] ?> --- <?= $pr['modelo_producto'] ?> --- <?= $pr['ip_producto'] ?>
+                                    </option>
+                                <?php endforeach; ?>
+                            </select>
                         </div>
                         <div class="mb-3">
                             <label>Fecha Instalación</label>

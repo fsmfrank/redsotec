@@ -21,7 +21,17 @@ class Usuarios extends BaseController
 
     public function crear()
     {
-        return view('clientes/crear');
+        $db = \Config\Database::connect();
+	    // Traemos planes con la tabla de productos
+	    $data['planes'] = $db->table('planes p')
+            ->select('p.id, p.nombre_plan, p.nombre_plan as plan_nombre, p.precio as precio_plan')
+            ->get()->getResultArray();
+	    $data['productos'] = $db->table('productos pr')
+            ->select('pr.id, pr.marca_producto, pr.modelo_producto as modelo_producto, pr.ip_producto as ip_producto')
+            ->where('pr.es_inventario', 'si')
+            ->get()->getResultArray();
+
+        return view('clientes/crear', $data);
     }
 
     public function guardar()
@@ -31,7 +41,7 @@ class Usuarios extends BaseController
         $reglas = [
             'nombres' => 'required|max_length[100]',
             'apellidos' => 'required|max_length[100]',
-            'tipo_cedula' => 'required|max_length[2]',
+            'tipo_cedula' => 'required|in_list[v,e,j,g,c,o]',
             'cedula' => 'required|decimal',
             'correo'      => 'required|min_length[3]|max_length[100]',
             'telefono1' => 'required|decimal',
@@ -108,6 +118,13 @@ class Usuarios extends BaseController
     }
 
     public function generarContrato($id) {
+        //Incluir logo de la empresa
+        $path = FCPATH . 'imagenes/logo-redsoven.png';
+        $type = pathinfo($path, PATHINFO_EXTENSION);
+        $data1 = file_get_contents($path);
+        $base64 = 'data:image/' . $type . ';base64,' . base64_encode($data1);
+        $data['logo_base64'] = $base64;
+
         $model = new UsuarioModel();
         $plan = new PlanModel();
         $data['u'] = $model->obtenerPlanUsuario($id); // Obtiene usuario por ID

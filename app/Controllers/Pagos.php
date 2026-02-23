@@ -26,7 +26,8 @@ class Pagos extends BaseController {
             'mes_pagado'  => $this->request->getPost('mes'),
             'anio_pagado' => date('Y'),
             'fecha_pago'  => date('Y-m-d'),
-            'metodo_pago' => $this->request->getPost('metodo')
+            'metodo_pago' => $this->request->getPost('metodo'),
+			'nota'  => $this->request->getPost('nota'),
         ]);
 
         return redirect()->to('/pagos')->with('mensaje', 'Pago registrado con éxito');
@@ -35,7 +36,7 @@ class Pagos extends BaseController {
 	public function generarPDF($id_pago)
 	{
 	    $pagoModel = new PagoModel();
-	    
+
 	    // Obtenemos los datos uniendo con la tabla de usuarios y planes
 	    $pago = $pagoModel->select('pagos.*, usuarios.*, planes.nombre_plan as plan_nombre')
 	                      ->join('usuarios', 'usuarios.id = pagos.usuario_id')

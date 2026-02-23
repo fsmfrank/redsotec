@@ -9,11 +9,12 @@
             <li class="menu-toggle">
                 <button id="menuToggle">&#9776;</button>
             </li>
-            <li class="menu-item hidden"><a href="#">Inicio</a></li>
+            <li class="menu-item hidden"><a href="/dashboard">Inicio</a></li>
             <li class="menu-item hidden"><a href="/planes" target="">Planes</a>
             </li>
             <li class="menu-item hidden"><a href="/productos" target="">Productos</a></li>
             <li class="menu-item hidden"><a href="/clientes" target="">Clientes</a>
+            <li class="menu-item hidden"><a href="/pagos" target="">Pagos</a>
             </li>
         </ul>
     </div>

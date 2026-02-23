@@ -27,7 +27,7 @@ class Tablas extends Migration
             'ip_producto' => ['type' => 'VARCHAR', 'constraint' => 30],
             'mac_producto' => ['type' => 'VARCHAR', 'constraint' => 30],
             'foto_producto' => ['type' => 'VARCHAR', 'constraint' => 100],
-            'es_inventario' => ['type' => 'ENUM', 'constraint' => ['si', 'no'], 'default' => 'no'],
+            'es_inventario' => ['type' => 'ENUM', 'constraint' => ['SI', 'NO'], 'default' => 'NO'],
             'precio' => ['type' => 'DECIMAL', 'constraint' => '10,2'],
         ]);
         $this->forge->addKey('id', true);
@@ -37,7 +37,7 @@ class Tablas extends Migration
             'id' => ['type' => 'INT', 'constraint' => 11, 'auto_increment' => true],
             'nombres' => ['type' => 'VARCHAR', 'constraint' => 100],
             'apellidos' => ['type' => 'VARCHAR', 'constraint' => 100],
-            'tipo_cedula' => ['type' => 'ENUM', 'constraint' => ['v', 'e','j','g','c','o'], 'default' => 'v'],
+            'tipo_cedula' => ['type' => 'ENUM', 'constraint' => ['V', 'E','J','G','C','O'], 'default' => 'V'],
             'cedula' => ['type' => 'INT', 'constraint' => 20],
             'correo' => ['type' => 'VARCHAR', 'constraint' => 100],
             'telefono1' => ['type' => 'INT'],
@@ -61,10 +61,11 @@ class Tablas extends Migration
             'id' => ['type' => 'INT', 'constraint' => 11, 'auto_increment' => true],
             'usuario_id' => ['type' => 'INT'],
             'monto' => ['type' => 'DECIMAL', 'constraint' => '10,2'],
-            'mes_pagado' => ['type' => 'DATE', 'null' => true],
+            'mes_pagado' => ['type' => 'VARCHAR', 'constraint' => 15],
             'anio_pagado' => ['type' => 'VARCHAR', 'constraint' => 30],
             'fecha_pago' => ['type' => 'DATE', 'null' => true],
-            'metodo_pago' => ['type' => 'ENUM', 'constraint' => ['efectivo', 'pago_movil','transferencia', 'otro'], 'default' => 'efectivo'],
+            'metodo_pago' => ['type' => 'ENUM', 'constraint' => ['EFECTIVO', 'PAGO MOVIL','TRANSFERENCIA', 'OTRO'], 'default' => 'PAGO MOVIL'],
+            'nota' => ['type' => 'TEXT', 'constraint' => 255],
 
         ]);
         $this->forge->addKey('id', true);
