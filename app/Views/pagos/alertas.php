@@ -22,7 +22,7 @@
         <tbody>
             <?php foreach($morosos as $m): ?>
             <tr>
-                <td><?= $m['nombres'] ?></td>
+                <td><?= $m['nombres'] ." ". $m['apellidos'] ?></td>
                 <td><?= $m['telefono1'] ?></td>
                 <td><?= $m['plan_nombre'] ?></td>
                 <td><strong>$<?= $m['precio'] ?></strong></td>

@@ -10,6 +10,7 @@
 </head>
 <body>
     <div class="header">
+    <img src="data:image/png;base64,<?= $imagen ?>" width="200">
         <h3>Recibo de Pago</h3>
         <p>Red de Soluciones Tecnol&oacute;gicas</p>
     </div>

@@ -17,7 +17,7 @@
                     <option value="">-- Seleccione un usuario --</option>
                     <?php foreach($usuarios as $u): ?>
                         <option value="<?= $u['id'] ?>" data-precio="<?= $u['precio_plan'] ?>">
-                            <?= $u['nombres'] ?> (Plan: <?= $u['plan_nombre'] ?>)
+                            <?= $u['nombres'] ." ". $u['apellidos'] ?> (Plan: <?= $u['plan_nombre'] ?>)
                         </option>
                     <?php endforeach; ?>
                 </select>
@@ -39,7 +39,7 @@
                         $val = $num + 1;
                         $selected = ($val == date('m')) ? 'selected' : '';
                     ?>
-                        <option value="<?= $val ?>" <?= $selected ?>><?= $nombre ?></option>
+                        <option value="<?= $nombre ?>" <?= $selected ?>><?= $nombre ?></option>
                     <?php endforeach; ?>
                 </select>
             </div>

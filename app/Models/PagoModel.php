@@ -9,7 +9,7 @@ class PagoModel extends Model {
 
     // Obtener historial con nombres de usuarios
     public function getPagosConUsuarios() {
-        return $this->select('pagos.*, usuarios.nombres as cliente')
+        return $this->select('pagos.*, usuarios.nombres as nombre_cliente, usuarios.apellidos as apellido_cliente')
                     ->join('usuarios', 'usuarios.id = pagos.usuario_id')
                     ->findAll();
     }

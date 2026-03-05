@@ -54,7 +54,7 @@ class Pagos extends BaseController {
 	    $dompdf = new \Dompdf\Dompdf($options);
 
 	    // Cargamos la vista del recibo y le pasamos los datos
-	    $html = view('pagos/recibo_pdf', ['pago' => $pago]);
+	    $html = view('pagos/recibo_pdf', ['pago' => $pago, 'imagen' => base64_encode(file_get_contents(FCPATH . 'imagenes/logo-redsoven.png'))]);
 
 	    $dompdf->loadHtml($html);
 	    $dompdf->setPaper('A5', 'portrait'); // Tamaño medio oficio
@@ -72,7 +72,7 @@ class Pagos extends BaseController {
 
 	    // Esta consulta busca usuarios que NO tienen un registro de pago en el mes actual
 	    $query = $db->query("
-	        SELECT u.nombres, u.telefono1, p.nombre_plan as plan_nombre, p.precio
+	        SELECT u.nombres, u.apellidos, u.telefono1, p.nombre_plan as plan_nombre, p.precio
 	        FROM usuarios u
 	        JOIN planes p ON u.plan_id = p.id
 	        WHERE u.estado = 'activo'
@@ -89,7 +89,9 @@ class Pagos extends BaseController {
 //Metodo dashboard
 	public function dashboard() {
 	    $db = \Config\Database::connect();
-	    $mesActual = date('m');
+		$meses = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio",
+         "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
+	    $mesActual = $meses[date('n') - 1];
 
 	    $data['totalRecaudado'] = $db->table('pagos')
 	                                 ->where('mes_pagado', $mesActual)
@@ -109,7 +111,7 @@ class Pagos extends BaseController {
 	    $db = \Config\Database::connect();
 	    // Traemos usuarios con el precio de su plan para el autocompletado JS
 	    $data['usuarios'] = $db->table('usuarios u')
-	                           ->select('u.id, u.nombres, p.nombre_plan as plan_nombre, p.precio as precio_plan')
+	                           ->select('u.id, u.nombres, u.apellidos, p.nombre_plan as plan_nombre, p.precio as precio_plan')
 	                           ->join('planes p', 'p.id = u.plan_id')
 	                           ->where('u.estado', 'activo')
 	                           ->get()->getResultArray();
